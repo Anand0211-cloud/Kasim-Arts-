@@ -9,21 +9,21 @@ import './CollectionsPreview.css';
 const collections = [
     {
         id: 1,
-        title: 'Sarees',
+        titleKey: 'sarees',
         image: silkImg,
-        points: ['Dress material', 'Tibetan Brocade {Gyashar & Gyanta}']
+        pointsKeys: ['dressMaterial', 'brocade']
     },
     {
         id: 2,
-        title: 'Suits',
+        titleKey: 'suits',
         image: suitImg,
-        points: ['Dress material', 'Tibetan Brocade {Gyashar & Gyanta}']
+        pointsKeys: ['dressMaterial', 'brocade']
     },
     {
         id: 3,
-        title: 'Lehengas',
+        titleKey: 'lehengas',
         image: lehengaImg,
-        points: ['Dress material', 'Tibetan Brocade {Gyashar & Gyanta}']
+        pointsKeys: ['dressMaterial', 'brocade']
     },
 ];
 
@@ -41,22 +41,22 @@ const CollectionsPreview = () => {
                     </p>
                 </div>
 
-                <div className="collections-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+                <div className="collections-grid">
                     {collections.map((item) => (
                         <div key={item.id} className="collection-card">
                             <div className="collection-image-wrapper">
-                                <img src={item.image} alt={item.title} className="collection-image" />
+                                <img src={item.image} alt={t(`collections.filters.${item.titleKey}`)} className="collection-image" />
                                 <div className="placeholder-overlay"></div>
                             </div>
                             <div className="collection-info">
                                 <div className="collection-points">
-                                    {item.points.map((point, index) => (
+                                    {item.pointsKeys.map((pointKey, index) => (
                                         <span key={index} className="collection-point-item d-block text-sm text-gray-500 mb-1">
-                                            • {point}
+                                            • {t(`home.collectionsPreview.points.${pointKey}`)}
                                         </span>
                                     ))}
                                 </div>
-                                <h3 className="collection-title">{item.title}</h3>
+                                <h3 className="collection-title">{t(`collections.filters.${item.titleKey}`)}</h3>
                                 <Link to="/collections" className="btn-text">{t('collections.card.request')} &rarr;</Link>
                             </div>
                         </div>

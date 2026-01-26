@@ -33,7 +33,7 @@ const Contact = () => {
                                 <li>
                                     <FiMapPin className="info-icon" />
                                     <div>
-                                        <strong>Kashim Arts Headquarters</strong><br />
+                                        <strong>{t('contact.hqName')}</strong><br />
                                         {t('contact.hqAddress')}
                                     </div>
                                 </li>
@@ -55,7 +55,7 @@ const Contact = () => {
                                 <span className="map-dot dot-uk" title={t('contact.countries.uk')}></span>
                                 <span className="map-dot dot-uae" title={t('contact.countries.uae')}></span>
                                 <span className="map-dot dot-aus" title={t('contact.countries.australia')}></span>
-                                <span className="map-dot dot-india" title="India (HQ)"></span>
+                                <span className="map-dot dot-india" title={t('contact.hqIndia')}></span>
                                 <p className="map-label">{t('contact.mapLabel')}</p>
                             </div>
                         </div>

@@ -21,6 +21,7 @@ export const translations = {
                 subtitle: "Core Infrastructure",
                 title: "The Global Standard in Textile Production",
                 desc: "Kasim Arts bridges the gap between rural master weavers and the international luxury market. We operate an end-to-end supply chain ensuring ethical practices, authentic craftsmanship, and uncompromised quality controls for our B2B partners.",
+                global: "Global",
                 feature1Title: "Private Labeling",
                 feature1Desc: "Complete end-to-end branding integration. From custom fabric tags to bespoke packaging tailored for your domestic and international stores.",
                 feature2Title: "Custom Manufacturing",
@@ -42,6 +43,7 @@ export const translations = {
             contactForm: {
                 title: "Partner with Kasim Arts",
                 subTitle: "B2B Inquiry",
+                sectionDesc: "Interested in our collections or custom manufacturing? Let's discuss how we can support your business goals.",
                 labelName: "Full Name",
                 labelCompany: "Company Name",
                 labelCountry: "Country / Region",
@@ -55,6 +57,7 @@ export const translations = {
                     partnership: "Retailing/Partnership"
                 },
                 namePlaceholder: "Your Name / Business Name",
+                companyPlaceholder: "Enterprises Ltd",
                 emailPlaceholder: "Business Email",
                 phonePlaceholder: "Phone Number",
                 messagePlaceholder: "Tell us about your requirements...",
@@ -65,7 +68,11 @@ export const translations = {
                 subtitle: "Our Craft",
                 title: "Masterpiece Collections",
                 desc: "Explore our curated selection of authentic weaves, from bridal Banarasis to lightweight chiffons.",
-                btnView: "View Global Catalog"
+                btnView: "View Global Catalog",
+                points: {
+                    dressMaterial: "Dress material",
+                    brocade: "Tibetan Brocade {Gyashar & Gyanta}"
+                }
             }
         },
         about: {
@@ -125,7 +132,19 @@ export const translations = {
                 organza: "Organza",
                 tusser: "Tusser",
                 spun: "Spun",
-                cotton: "Cotton"
+                cotton: "Cotton",
+                sarees: "Sarees",
+                suits: "Suits",
+                lehengas: "Lehengas"
+            },
+            products: {
+                silkDesc: "Gold zari work on pure silk.",
+                chiffonDesc: "Lightweight hand-painted flora.",
+                linenDesc: "Breathable pure linen fabric.",
+                organzaDesc: "Subtle silver embroidery.",
+                tusserDesc: "Rich textured wild silk.",
+                spunDesc: "Soft spun blend for daily wear.",
+                cottonDesc: "Traditional handloom cotton."
             },
             card: {
                 request: "Request Details",
@@ -197,11 +216,13 @@ export const translations = {
             title: "B2B Business Inquiry",
             desc: "Please provide your details and our export manager will contact you within 24 hours.",
             hqTitle: "Headquarters",
+            hqName: "Kasim Arts Headquarters",
             hqAddress: "Madanpura, Banaras, UP, India - 221001",
             unitLabel: "Manufacturing Unit:",
             unitAddress: "Textile Valley, Surat, Gujarat",
             mapLabel: "Global Export Network",
             globalPresence: "Global Export",
+            hqIndia: "India (HQ)",
             countries: {
                 uae: "United Arab Emirates",
                 uk: "United Kingdom",
@@ -251,6 +272,7 @@ export const translations = {
                 subtitle: "प्रमुख अवसंरचना",
                 title: "वस्त्र उत्पादन में वैश्विक मानक",
                 desc: "कासिम आर्ट्स ग्रामीण कुशल बुनकरों और अंतरराष्ट्रीय लक्जरी बाजार के बीच की खाई को पाटता है। हम अपने बी२बी भागीदारों के लिए नैतिक प्रथाओं, प्रामाणिक शिल्प कौशल और असम्बद्ध गुणवत्ता नियंत्रण सुनिश्चित करते हुए एक अंत-से-अंत आपूर्ति श्रृंखला संचालित करते हैं।",
+                global: "वैश्विक",
                 feature1Title: "निजी लेबलिंग",
                 feature1Desc: "पूर्ण अंत-से-अंत ब्रांडिंग एकीकरण। कस्टम फैब्रिक टैग से लेकर आपके घरेलू और अंतरराष्ट्रीय स्टोर के लिए तैयार पैकेजिंग तक।",
                 feature2Title: "कस्टम विनिर्माण",
@@ -272,6 +294,7 @@ export const translations = {
             contactForm: {
                 title: "कासिम आर्ट्स के साथ भागीदार बनें",
                 subTitle: "व्यापार पूछताछ",
+                sectionDesc: "हमारे संग्रह या कस्टम विनिर्माण में रुचि रखते हैं? आइए चर्चा करें कि हम आपके व्यावसायिक लक्ष्यों का समर्थन कैसे कर सकते हैं।",
                 labelName: "पूरा नाम",
                 labelCompany: "कंपनी का नाम",
                 labelCountry: "देश / क्षेत्र",
@@ -285,6 +308,7 @@ export const translations = {
                     partnership: "खुदरा / साझेदारी"
                 },
                 namePlaceholder: "आपका नाम / व्यवसाय का नाम",
+                companyPlaceholder: "उद्यम लिमिटेड",
                 emailPlaceholder: " व्यावसायिक ईमेल",
                 phonePlaceholder: "फ़ोन नंबर",
                 messagePlaceholder: "हमें अपनी आवश्यकताओं के बारे में बताएं...",
@@ -295,7 +319,11 @@ export const translations = {
                 subtitle: "हमारी शिल्प",
                 title: "उत्कृष्ट संग्रह",
                 desc: "दुल्हन बनारसी से लेकर हल्के शिफॉन तक, हमारे प्रामाणिक बुनाई के क्यूरेटेड चयन का अन्वेषण करें।",
-                btnView: "वैश्विक कैटलॉग देखें"
+                btnView: "वैश्विक कैटलॉग देखें",
+                points: {
+                    dressMaterial: "ड्रेस सामग्री",
+                    brocade: "तिब्बती ब्रोकेड {ग्याशर और ग्यांटा}"
+                }
             }
         },
         about: {
@@ -355,7 +383,19 @@ export const translations = {
                 organza: "ओर्गान्जा",
                 tusser: "टसर",
                 spun: "स्पून",
-                cotton: "सूती"
+                cotton: "सूती",
+                sarees: "साड़ी",
+                suits: "सूट",
+                lehengas: "लहंगा"
+            },
+            products: {
+                silkDesc: "शुद्ध रेशम पर सोने का ज़री काम।",
+                chiffonDesc: "हल्के हाथ से पेंट किए गए वनस्पति।",
+                linenDesc: "सांस लेने योग्य शुद्ध लिनन कपड़ा।",
+                organzaDesc: "सूक्ष्म चांदी की कढ़ाई।",
+                tusserDesc: "समृद्ध बनावट वाला जंगली रेशम।",
+                spunDesc: "दैनिक पहनने के लिए नरम काता मिश्रण।",
+                cottonDesc: "पारंपरिक हथकरघा कपास।"
             },
             card: {
                 request: "विवरण का अनुरोध करें",
@@ -391,6 +431,18 @@ export const translations = {
             journey: {
                 title: "निर्माण यात्रा",
                 desc: "आधुनिक तकनीक के साथ पैतृक शिल्प कौशल का मिश्रण एक सावधानीपूर्वक यात्रा।",
+                labels: {
+                    step1Silk: "रेशम प्रसंस्करण:",
+                    step1Zari: "ज़री कारीगरी:",
+                    step2Graphing: "डिजिटल ग्राफिंग और सिमुलेशन:",
+                    step2Jacquard: "इलेक्ट्रॉनिक जैकर्ड:",
+                    step3Time: "समय और सटीकता:",
+                    step3Artistry: "पुनरावर्ती कलात्मकता:",
+                    step4Handloom: "हथकरघा अखंडता:",
+                    step4Quality: "श्रेष्ठ गुणवत्ता:",
+                    step5Fashion: "वैश्विक फैशन:",
+                    step5Partnerships: "कॉर्पोरेट साझेदारी:"
+                },
                 step1: {
                     title: "सामग्री तैयार करना और रंगाई",
                     intro: "शुद्ध रेशम, कपास, और टसर सहित उच्च गुणवत्ता वाले कच्चे माल का चयन।",
@@ -427,18 +479,20 @@ export const translations = {
             title: "बी२बी व्यापार पूछताछ",
             desc: "कृपया अपना विवरण प्रदान करें और हमारे निर्यात प्रबंधक २४ घंटे के भीतर आपसे संपर्क करेंगे।",
             hqTitle: "मुख्यालय",
+            hqName: "कासिम आर्ट्स मुख्यालय",
             hqAddress: "मदनपुरा, बनारस, यूपी, भारत - २२१००१",
             unitLabel: "निर्माण इकाई:",
             unitAddress: "टेक्सटाइल वैली, सूरत, गुजरात",
             mapLabel: "वैश्विक निर्यात नेटवर्क",
             globalPresence: "वैश्विक निर्यात",
+            hqIndia: "भारत (मुख्यालय)",
             countries: {
                 uae: "संयुक्त अरब अमीरात",
                 uk: "यूनाइटेड किंगडम",
                 usa: "संयुक्त राज्य अमेरिका",
                 singapore: "सिंगापुर",
                 canada: "कनाडा",
-                australia: "ऑस्ट्रेलिया"
+                australia: "Australia"
             }
         },
         footer: {

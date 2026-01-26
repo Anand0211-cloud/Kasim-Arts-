@@ -11,13 +11,13 @@ import './Collections.css';
 
 // Mock Data
 const products = [
-    { id: 1, name: "Silk", category: "silk", desc: "Gold zari work on pure silk.", image: silkImg },
-    { id: 2, name: "Chiffon", category: "chiffon", desc: "Lightweight hand-painted flora.", image: chiffonImg },
-    { id: 3, name: "Linen", category: "linen", desc: "Breathable pure linen fabric.", image: linenImg },
-    { id: 4, name: "Organza", category: "organza", desc: "Subtle silver embroidery.", image: organzaImg },
-    { id: 5, name: "Tusser", category: "tusser", desc: "Rich textured wild silk.", image: tusserImg },
-    { id: 6, name: "Spun", category: "spun", desc: "Soft spun blend for daily wear.", image: spunImg },
-    { id: 7, name: "Cotton", category: "cotton", desc: "Traditional handloom cotton.", image: cottonImg },
+    { id: 1, category: "silk", image: silkImg },
+    { id: 2, category: "chiffon", image: chiffonImg },
+    { id: 3, category: "linen", image: linenImg },
+    { id: 4, category: "organza", image: organzaImg },
+    { id: 5, category: "tusser", image: tusserImg },
+    { id: 6, category: "spun", image: spunImg },
+    { id: 7, category: "cotton", image: cottonImg },
 ];
 
 const FILTER_KEYS = ["all", "silk", "chiffon", "linen", "organza", "tusser", "spun", "cotton"];
@@ -71,15 +71,15 @@ const Collections = () => {
                     {filteredProducts.map(product => (
                         <div key={product.id} className="product-card">
                             <div className="product-image-wrapper">
-                                <img src={product.image} alt={product.name} className="product-img" />
+                                <img src={product.image} alt={t(`collections.filters.${product.category}`)} className="product-img" />
                                 {/* Overlay / Placeholder */}
                                 <div className="hover-overlay">
                                     <span className="view-text">{t('collections.card.request')}</span>
                                 </div>
                             </div>
                             <div className="product-info">
-                                <h3 className="product-name">{product.name}</h3>
-                                <p className="product-desc">{product.desc}</p>
+                                <h3 className="product-name">{t(`collections.filters.${product.category}`)}</h3>
+                                <p className="product-desc">{t(`collections.products.${product.category}Desc`)}</p>
                                 <button className="btn-inquiry">{t('collections.card.inquiry')}</button>
                             </div>
                         </div>

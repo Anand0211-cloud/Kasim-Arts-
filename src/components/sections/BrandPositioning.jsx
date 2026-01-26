@@ -7,7 +7,7 @@ const BrandPositioning = () => {
     const { t } = useLanguage();
 
     const stats = [
-        { icon: <FiGlobe />, number: "Global", label: t('home.positioning.stats.countries') },
+        { icon: <FiGlobe />, number: t('home.positioning.global'), label: t('home.positioning.stats.countries') },
         { icon: <FiUsers />, number: "200+", label: t('home.positioning.stats.artisans') },
         { icon: <FiAward />, number: "150+", label: t('home.positioning.stats.legacy') },
     ];

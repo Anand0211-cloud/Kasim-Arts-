@@ -75,8 +75,8 @@ const Manufacturing = () => {
                                 <h3>{t('manufacturing.journey.step1.title')}</h3>
                                 <p className="node-intro">{t('manufacturing.journey.step1.intro')}</p>
                                 <ul className="node-details">
-                                    <li><strong>Silk Processing:</strong> {t('manufacturing.journey.step1.silk')}</li>
-                                    <li><strong>Zari Craftsmanship:</strong> {t('manufacturing.journey.step1.zari')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step1Silk')}</strong> {t('manufacturing.journey.step1.silk')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step1Zari')}</strong> {t('manufacturing.journey.step1.zari')}</li>
                                 </ul>
                             </div>
                         </div>
@@ -88,8 +88,8 @@ const Manufacturing = () => {
                                 <h3>{t('manufacturing.journey.step2.title')}</h3>
                                 <p className="node-intro">{t('manufacturing.journey.step2.intro')}</p>
                                 <ul className="node-details">
-                                    <li><strong>Digital Graphing & Simulation:</strong> {t('manufacturing.journey.step2.graphing')}</li>
-                                    <li><strong>Electronic Jacquards:</strong> {t('manufacturing.journey.step2.jacquard')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step2Graphing')}</strong> {t('manufacturing.journey.step2.graphing')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step2Jacquard')}</strong> {t('manufacturing.journey.step2.jacquard')}</li>
                                 </ul>
                             </div>
                         </div>
@@ -101,8 +101,8 @@ const Manufacturing = () => {
                                 <h3>{t('manufacturing.journey.step3.title')}</h3>
                                 <p className="node-intro">{t('manufacturing.journey.step3.intro')}</p>
                                 <ul className="node-details">
-                                    <li><strong>Time and Precision:</strong> {t('manufacturing.journey.step3.time')}</li>
-                                    <li><strong>Iterative Artistry:</strong> {t('manufacturing.journey.step3.artistry')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step3Time')}</strong> {t('manufacturing.journey.step3.time')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step3Artistry')}</strong> {t('manufacturing.journey.step3.artistry')}</li>
                                 </ul>
                             </div>
                         </div>
@@ -114,8 +114,8 @@ const Manufacturing = () => {
                                 <h3>{t('manufacturing.journey.step4.title')}</h3>
                                 <p className="node-intro">{t('manufacturing.journey.step4.intro')}</p>
                                 <ul className="node-details">
-                                    <li><strong>Handloom Integrity:</strong> {t('manufacturing.journey.step4.handloom')}</li>
-                                    <li><strong>Superior Quality:</strong> {t('manufacturing.journey.step4.quality')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step4Handloom')}</strong> {t('manufacturing.journey.step4.handloom')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step4Quality')}</strong> {t('manufacturing.journey.step4.quality')}</li>
                                 </ul>
                             </div>
                         </div>
@@ -127,8 +127,8 @@ const Manufacturing = () => {
                                 <h3>{t('manufacturing.journey.step5.title')}</h3>
                                 <p className="node-intro">{t('manufacturing.journey.step5.intro')}</p>
                                 <ul className="node-details">
-                                    <li><strong>Global Fashion:</strong> {t('manufacturing.journey.step5.fashion')}</li>
-                                    <li><strong>Corporate Partnerships:</strong> {t('manufacturing.journey.step5.partnerships')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step5Fashion')}</strong> {t('manufacturing.journey.step5.fashion')}</li>
+                                    <li><strong>{t('manufacturing.journey.labels.step5Partnerships')}</strong> {t('manufacturing.journey.step5.partnerships')}</li>
                                 </ul>
                             </div>
                         </div>

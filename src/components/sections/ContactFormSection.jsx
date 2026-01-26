@@ -13,8 +13,7 @@ const ContactFormSection = ({ title, showHeader = false }) => {
                     <div className="section-header text-center" style={{ marginBottom: '3rem' }}>
                         <h2 className="section-title">{title || t('home.contactForm.title')}</h2>
                         <p className="section-desc" style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--text-secondary)' }}>
-                            Interested in our collections or custom manufacturing?
-                            Let's discuss how we can support your business goals.
+                            {t('home.contactForm.sectionDesc')}
                         </p>
                     </div>
                 )}
@@ -28,7 +27,7 @@ const ContactFormSection = ({ title, showHeader = false }) => {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="company">{t('home.contactForm.labelCompany')}</label>
-                                <input type="text" id="company" placeholder="Enterprises Ltd" className="form-control" />
+                                <input type="text" id="company" placeholder={t('home.contactForm.companyPlaceholder')} className="form-control" />
                             </div>
                         </div>
 
