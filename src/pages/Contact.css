@@ -1,0 +1,244 @@
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 3rem 0 4rem;
+    }
+}
+
+.contact-page {
+    padding: 4rem 0 6rem;
+    background-color: var(--bg-primary);
+}
+
+.contact-header {
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-title {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.page-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+}
+
+/* Form Styles */
+.contact-form-wrapper {
+    background-color: var(--bg-secondary);
+    padding: 3rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-gold-primary);
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Sidebar Styles */
+.info-card {
+    margin-bottom: 3rem;
+}
+
+.info-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.info-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.info-icon {
+    color: var(--color-gold-primary);
+    font-size: 1.2rem;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+/* Map Visualization */
+.map-placeholder {
+    background-color: #e5e5e5;
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    background-image: url('data:image/svg+xml;base64,...');
+    /* Could be a static world map SVG */
+    background-size: cover;
+    /* Simple CSS-only visual using a gradient or just dots on a gray box if no image */
+    background: radial-gradient(circle at 50% 50%, #fff 2px, transparent 2.5px), var(--bg-secondary);
+    background-size: 20px 20px;
+    /* Dot grid pattern */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+}
+
+[data-theme='dark'] .map-placeholder {
+    background: radial-gradient(circle at 50% 50%, #333 2px, transparent 2.5px), var(--bg-secondary);
+}
+
+.world-map-visual {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* Simulate a map with dots roughly */
+}
+
+.map-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-gold-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
+}
+
+.dot-usa {
+    top: 30%;
+    left: 20%;
+}
+
+.dot-uk {
+    top: 25%;
+    left: 48%;
+}
+
+.dot-uae {
+    top: 40%;
+    left: 58%;
+}
+
+.dot-india {
+    top: 45%;
+    left: 65%;
+}
+
+.dot-aus {
+    top: 70%;
+    left: 85%;
+}
+
+.map-label {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.global-list h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.country-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.country-grid span::before {
+    content: '•';
+    color: var(--color-gold-primary);
+    margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

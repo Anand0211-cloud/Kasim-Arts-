@@ -1,0 +1,42 @@
+:root {
+  /* Brand Colors */
+  --color-gold-primary: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #AA8C2C;
+
+  /* Neutral Colors */
+  --color-black: #0A0A0A;
+  --color-charcoal: #1E1E1E;
+  --color-gray-medium: #888888;
+  --color-gray-light: #E5E5E5;
+  --color-ivory: #FDFBF7;
+  --color-white: #FFFFFF;
+
+  /* Theme: Light (Default) */
+  --bg-primary: var(--color-ivory);
+  --bg-secondary: var(--color-white);
+  --text-primary: var(--color-black);
+  --text-secondary: var(--color-charcoal);
+  --text-muted: var(--color-gray-medium);
+  --border-color: var(--color-gray-light);
+  
+  /* Layout */
+  --container-max-width: 1440px;
+  --header-height: 80px;
+}
+
+[data-theme='dark'] {
+  /* Theme: Dark */
+  --bg-primary: var(--color-black);
+  --bg-secondary: var(--color-charcoal);
+  --text-primary: var(--color-ivory);
+  --text-secondary: var(--color-gray-light);
+  --text-muted: var(--color-gray-medium);
+  --border-color: #333333;
+}
+
+/* Typography Variables */
+:root {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}

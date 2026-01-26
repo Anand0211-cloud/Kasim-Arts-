@@ -1,0 +1,258 @@
+@media (max-width: 768px) {
+    .manufacturing-page {
+        padding: 3rem 0 4rem;
+    }
+}
+
+.manufacturing-page {
+    padding: 4rem 0 6rem;
+    background-color: var(--bg-primary);
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.capability-card {
+    background-color: var(--bg-secondary);
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.capability-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold-primary);
+}
+
+.cap-icon-wrapper {
+    font-size: 2.5rem;
+    color: var(--color-gold-primary);
+    margin-bottom: 1.5rem;
+}
+
+.capability-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.capability-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Stats Section */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+    padding: 3rem 2rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-gold-primary);
+    font-family: var(--font-serif);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Quote Banner */
+.quote-banner {
+    background-color: var(--bg-card);
+    /* Darker contrast */
+    padding: 6rem 2rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.quote-banner blockquote {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin: 0 0 1.5rem;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-banner cite {
+    font-size: 1rem;
+    color: var(--color-gold-primary);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Detailed Process Section */
+.detailed-process-section {
+    padding-top: 4rem;
+}
+
+.section-desc {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    font-size: 1.1rem;
+}
+
+.process-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 29px;
+    /* Aligns with the center of the number circle */
+    width: 2px;
+    background: var(--border-color);
+    z-index: 0;
+}
+
+.process-node {
+    display: flex;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.process-node:last-child {
+    margin-bottom: 0;
+}
+
+.process-number {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--color-gold-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--color-gold-primary);
+    margin-right: 2rem;
+    z-index: 1;
+    /* To sit on top of the line */
+}
+
+.process-content {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    /* Slight rounding for modern feel */
+    flex-grow: 1;
+}
+
+.process-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.node-intro {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    /* Slightly stronger than secondary for emphasis */
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.node-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.node-details li {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.node-details li::before {
+    content: '•';
+    color: var(--color-gold-primary);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.node-details li:last-child {
+    margin-bottom: 0;
+}
+
+.node-details strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .process-timeline::before {
+        left: 20px;
+    }
+
+    .process-node {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .process-number {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        z-index: 2;
+        /* Ensure it stays above everything */
+        position: relative;
+        /* Relative for z-index to work contextually if needed */
+        margin-left: 0;
+        /* Align left */
+    }
+
+    /* Adjust line position for mobile to be under the number aligned left */
+    .process-timeline::before {
+        left: 19px;
+    }
+
+    .process-content {
+        margin-left: 2rem;
+        /* Indent content to visually separate from line */
+        padding: 1.5rem;
+    }
+}

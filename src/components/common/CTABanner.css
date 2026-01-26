@@ -1,0 +1,59 @@
+.cta-banner {
+    padding: 6rem 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+
+[data-theme='light'] .cta-banner {
+    background-color: var(--color-black);
+    /* Keep dark for contrast/premium feel even in light mode, or use dark gray */
+    color: var(--color-white);
+}
+
+.cta-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.cta-desc {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cta-actions .btn-outline {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.cta-actions .btn-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-actions a {
+        width: 100%;
+        max-width: 300px;
+    }
+}
