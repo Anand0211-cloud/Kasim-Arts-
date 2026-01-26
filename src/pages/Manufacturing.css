@@ -251,8 +251,14 @@
     }
 
     .process-content {
-        margin-left: 2rem;
-        /* Indent content to visually separate from line */
-        padding: 1.5rem;
+        margin-left: 1rem;
+        /* Reduced margin for mobile */
+        padding: 1rem;
+    }
+
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        /* Ensure some side padding */
     }
 }

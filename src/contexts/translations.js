@@ -180,6 +180,18 @@ export const translations = {
             journey: {
                 title: "The Manufacturing Journey",
                 desc: "A meticulous journey blending ancestral craftsmanship with modern technology.",
+                labels: {
+                    step1Silk: "Silk Processing:",
+                    step1Zari: "Zari Craftsmanship:",
+                    step2Graphing: "Digital Graphing & Simulation:",
+                    step2Jacquard: "Electronic Jacquards:",
+                    step3Time: "Time and Precision:",
+                    step3Artistry: "Iterative Artistry:",
+                    step4Handloom: "Handloom Integrity:",
+                    step4Quality: "Superior Quality:",
+                    step5Fashion: "Global Fashion:",
+                    step5Partnerships: "Corporate Partnerships:"
+                },
                 step1: {
                     title: "Material Preparation and Dyeing",
                     intro: "Selection of high-quality raw materials including pure silk, cotton, linen, and tussar.",
