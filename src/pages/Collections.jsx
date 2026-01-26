@@ -11,20 +11,20 @@ import './Collections.css';
 
 // Mock Data
 const products = [
-    { id: 1, name: "Royal Banarasi Silk", category: "silk", desc: "Gold zari work on pure silk.", image: silkImg },
-    { id: 2, name: "Midnight Chiffon", category: "chiffon", desc: "Lightweight hand-painted flora.", image: chiffonImg },
-    { id: 3, name: "Natural Linen", category: "linen", desc: "Breathable pure linen fabric.", image: linenImg },
-    { id: 4, name: "Ivory Organza", category: "organza", desc: "Subtle silver embroidery.", image: organzaImg },
-    { id: 5, name: "Golden Tusser", category: "tusser", desc: "Rich textured wild silk.", image: tusserImg },
-    { id: 6, name: "Spun Classic", category: "spun", desc: "Soft spun blend for daily wear.", image: spunImg },
-    { id: 7, name: "Handwoven Cotton", category: "cotton", desc: "Traditional handloom cotton.", image: cottonImg },
+    { id: 1, name: "Silk", category: "silk", desc: "Gold zari work on pure silk.", image: silkImg },
+    { id: 2, name: "Chiffon", category: "chiffon", desc: "Lightweight hand-painted flora.", image: chiffonImg },
+    { id: 3, name: "Linen", category: "linen", desc: "Breathable pure linen fabric.", image: linenImg },
+    { id: 4, name: "Organza", category: "organza", desc: "Subtle silver embroidery.", image: organzaImg },
+    { id: 5, name: "Tusser", category: "tusser", desc: "Rich textured wild silk.", image: tusserImg },
+    { id: 6, name: "Spun", category: "spun", desc: "Soft spun blend for daily wear.", image: spunImg },
+    { id: 7, name: "Cotton", category: "cotton", desc: "Traditional handloom cotton.", image: cottonImg },
 ];
+
+const FILTER_KEYS = ["all", "silk", "chiffon", "linen", "organza", "tusser", "spun", "cotton"];
 
 const Collections = () => {
     const { t } = useLanguage();
     const [activeFilter, setActiveFilter] = useState("all");
-
-    const filters = ["all", "silk", "chiffon", "linen", "organza", "tusser", "spun", "cotton"];
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -33,10 +33,14 @@ const Collections = () => {
     const filteredProducts = useMemo(() => {
         if (activeFilter === "all") {
             return products;
-        } else {
-            return products.filter(p => p.category === activeFilter);
         }
+        return products.filter(p => p.category === activeFilter);
     }, [activeFilter]);
+
+    const handleFilterClick = (filterKey) => {
+        setActiveFilter(filterKey);
+        console.log("Filter set to:", filterKey); // Debugging
+    };
 
     return (
         <div className="collections-page">
@@ -51,11 +55,11 @@ const Collections = () => {
 
                 {/* Filters */}
                 <div className="filters-container">
-                    {filters.map(filter => (
+                    {FILTER_KEYS.map(filter => (
                         <button
                             key={filter}
                             className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
-                            onClick={() => setActiveFilter(filter)}
+                            onClick={() => handleFilterClick(filter)}
                         >
                             {t(`collections.filters.${filter}`)}
                         </button>
@@ -74,7 +78,6 @@ const Collections = () => {
                                 </div>
                             </div>
                             <div className="product-info">
-                                <span className="product-cat">{t(`collections.filters.${product.category}`)}</span>
                                 <h3 className="product-name">{product.name}</h3>
                                 <p className="product-desc">{product.desc}</p>
                                 <button className="btn-inquiry">{t('collections.card.inquiry')}</button>

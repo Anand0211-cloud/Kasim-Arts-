@@ -2,16 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import silkImg from '../../assets/collection-silk.png';
-import chiffonImg from '../../assets/collection-chiffon.png';
-import organzaImg from '../../assets/collection-organza.png';
-import linenImg from '../../assets/collection-linen.png';
+import suitImg from '../../assets/collection-suit.png';
+import lehengaImg from '../../assets/collection-lehenga.png';
 import './CollectionsPreview.css';
 
 const collections = [
-    { id: 1, title: 'Banarasi Silk', categoryKey: 'silk', image: silkImg },
-    { id: 2, title: 'Pure Chiffon', categoryKey: 'chiffon', image: chiffonImg },
-    { id: 3, title: 'Ethereal Organza', categoryKey: 'organza', image: organzaImg },
-    { id: 4, title: 'Premium Linen', categoryKey: 'linen', image: linenImg },
+    {
+        id: 1,
+        title: 'Sarees',
+        image: silkImg,
+        points: ['Dress material', 'Tibetan Brocade {Gyashar & Gyanta}']
+    },
+    {
+        id: 2,
+        title: 'Suits',
+        image: suitImg,
+        points: ['Dress material', 'Tibetan Brocade {Gyashar & Gyanta}']
+    },
+    {
+        id: 3,
+        title: 'Lehengas',
+        image: lehengaImg,
+        points: ['Dress material', 'Tibetan Brocade {Gyashar & Gyanta}']
+    },
 ];
 
 const CollectionsPreview = () => {
@@ -28,7 +41,7 @@ const CollectionsPreview = () => {
                     </p>
                 </div>
 
-                <div className="collections-grid">
+                <div className="collections-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
                     {collections.map((item) => (
                         <div key={item.id} className="collection-card">
                             <div className="collection-image-wrapper">
@@ -36,7 +49,13 @@ const CollectionsPreview = () => {
                                 <div className="placeholder-overlay"></div>
                             </div>
                             <div className="collection-info">
-                                <span className="collection-cat">{t(`collections.filters.${item.categoryKey}`)}</span>
+                                <div className="collection-points">
+                                    {item.points.map((point, index) => (
+                                        <span key={index} className="collection-point-item d-block text-sm text-gray-500 mb-1">
+                                            • {point}
+                                        </span>
+                                    ))}
+                                </div>
                                 <h3 className="collection-title">{item.title}</h3>
                                 <Link to="/collections" className="btn-text">{t('collections.card.request')} &rarr;</Link>
                             </div>

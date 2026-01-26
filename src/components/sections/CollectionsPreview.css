@@ -15,9 +15,15 @@
 
 .collections-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+    .collections-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .collection-card {
@@ -44,13 +50,17 @@
     text-align: center;
 }
 
-.collection-cat {
+.collection-points {
+    margin-bottom: 1rem;
+}
+
+.collection-point-item {
     display: block;
     font-size: 0.8rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: var(--color-gold-primary);
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
 }
 
 .collection-title {
