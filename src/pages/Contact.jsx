@@ -39,11 +39,11 @@ const Contact = () => {
                                 </li>
                                 <li>
                                     <FiPhone className="info-icon" />
-                                    <div>+91 987 654 3210</div>
+                                    <div>+91 75250 81550</div>
                                 </li>
                                 <li>
                                     <FiMail className="info-icon" />
-                                    <div>b2b@kasimarts.com</div>
+                                    <div>kasimartsworld@gmail.com</div>
                                 </li>
                             </ul>
                         </div>

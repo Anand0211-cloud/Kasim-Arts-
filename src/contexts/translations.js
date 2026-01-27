@@ -116,7 +116,7 @@ export const translations = {
             philosophy: {
                 title: "The Artisans Behind the Label",
                 text: "\"The creation of a single saree is a meticulous process, depending on the design and craftsmanship of the sarees. Many of our artisans have been with us for decades—some for 40 years. We pride ourselves on being a 'gaddi' that provides meaningful work to our community.\"",
-                stat1Label: "Hand-Guided Artistry",
+                stat1Label: "Authentic",
                 stat2Label: "Fair Trade Practices"
             }
         },
@@ -229,7 +229,7 @@ export const translations = {
             desc: "Please provide your details and our export manager will contact you within 24 hours.",
             hqTitle: "Headquarters",
             hqName: "Kasim Arts Headquarters",
-            hqAddress: "Madanpura, Banaras, UP, India - 221001",
+            hqAddress: "A.29/1-A-2, K.P, Pilikothi (Behind Adampupra Police Station) Varanasi-221001",
             unitLabel: "Manufacturing Unit:",
             unitAddress: "Textile Valley, Surat, Gujarat",
             mapLabel: "Global Export Network",
@@ -379,7 +379,7 @@ export const translations = {
             philosophy: {
                 title: "लेबल के पीछे के कारीगर",
                 text: "\"एक साड़ी का निर्माण एक बहुत ही बारीक प्रक्रिया है, जो साड़ियों के डिजाइन और शिल्प कौशल पर निर्भर करता है। हमारे कई कारीगर दशकों से हमारे साथ हैं - कुछ ४० वर्षों से। हमें एक 'गद्दी' होने पर गर्व है जो हमारे समुदाय को सार्थक काम प्रदान करती है।\"",
-                stat1Label: "हस्त-निर्देशित कलात्मकता",
+                stat1Label: "प्रामाणिक",
                 stat2Label: "निष्पक्ष व्यापार व्यवहार"
             }
         },
@@ -492,7 +492,7 @@ export const translations = {
             desc: "कृपया अपना विवरण प्रदान करें और हमारे निर्यात प्रबंधक २४ घंटे के भीतर आपसे संपर्क करेंगे।",
             hqTitle: "मुख्यालय",
             hqName: "कासिम आर्ट्स मुख्यालय",
-            hqAddress: "मदनपुरा, बनारस, यूपी, भारत - २२१००१",
+            hqAddress: "ए.२९/१-ए-२, के.पी, पीलीकोठी (आदमपुरा पुलिस स्टेशन के पीछे) वाराणसी-२२१००१",
             unitLabel: "निर्माण इकाई:",
             unitAddress: "टेक्सटाइल वैली, सूरत, गुजरात",
             mapLabel: "वैश्विक निर्यात नेटवर्क",

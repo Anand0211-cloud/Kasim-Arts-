@@ -57,11 +57,11 @@ const Footer = () => {
                             </li>
                             <li>
                                 <FiPhone className="icon" />
-                                <span>+91 987 654 3210</span>
+                                <span>+91 75250 81550</span>
                             </li>
                             <li>
                                 <FiMail className="icon" />
-                                <span>export@kasimarts.com</span>
+                                <span>kasimartsworld@gmail.com</span>
                             </li>
                         </ul>
                     </div>
