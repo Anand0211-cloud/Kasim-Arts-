@@ -4,27 +4,36 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import silkImg from '../../assets/collection-silk.png';
 import suitImg from '../../assets/collection-suit.png';
 import lehengaImg from '../../assets/collection-lehenga.png';
+import dressMaterialImg from '../../assets/collection-dress-material.png';
+import brocadeImg from '../../assets/collection-brocade.png';
 import './CollectionsPreview.css';
 
 const collections = [
     {
         id: 1,
         titleKey: 'sarees',
-        image: silkImg,
-        pointsKeys: ['dressMaterial', 'brocade']
+        image: silkImg
     },
     {
         id: 2,
         titleKey: 'suits',
-        image: suitImg,
-        pointsKeys: ['dressMaterial', 'brocade']
+        image: suitImg
     },
     {
         id: 3,
         titleKey: 'lehengas',
-        image: lehengaImg,
-        pointsKeys: ['dressMaterial', 'brocade']
+        image: lehengaImg
     },
+    {
+        id: 4,
+        titleKey: 'dressMaterial',
+        image: dressMaterialImg
+    },
+    {
+        id: 5,
+        titleKey: 'brocade',
+        image: brocadeImg
+    }
 ];
 
 const CollectionsPreview = () => {
@@ -49,13 +58,6 @@ const CollectionsPreview = () => {
                                 <div className="placeholder-overlay"></div>
                             </div>
                             <div className="collection-info">
-                                <div className="collection-points">
-                                    {item.pointsKeys.map((pointKey, index) => (
-                                        <span key={index} className="collection-point-item d-block text-sm text-gray-500 mb-1">
-                                            • {t(`home.collectionsPreview.points.${pointKey}`)}
-                                        </span>
-                                    ))}
-                                </div>
                                 <h3 className="collection-title">{t(`collections.filters.${item.titleKey}`)}</h3>
                                 <Link to="/collections" className="btn-text">{t('collections.card.request')} &rarr;</Link>
                             </div>

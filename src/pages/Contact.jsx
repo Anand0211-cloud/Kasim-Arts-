@@ -49,28 +49,19 @@ const Contact = () => {
                         </div>
 
                         <div className="map-placeholder">
-                            {/* Simple CSS World Map Visualization Placeholder */}
-                            <div className="world-map-visual">
-                                <span className="map-dot dot-usa" title={t('contact.countries.usa')}></span>
-                                <span className="map-dot dot-uk" title={t('contact.countries.uk')}></span>
-                                <span className="map-dot dot-uae" title={t('contact.countries.uae')}></span>
-                                <span className="map-dot dot-aus" title={t('contact.countries.australia')}></span>
-                                <span className="map-dot dot-india" title={t('contact.hqIndia')}></span>
-                                <p className="map-label">{t('contact.mapLabel')}</p>
-                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14421.13788289445!2d83.0035541!3d25.3528246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76435c43d%3A0x66c841a05256e633!2sPilikothi%2C%20Varanasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709971234567!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Varanasi Location"
+                            ></iframe>
+                            <p className="map-label" style={{ bottom: '10px' }}>{t('contact.mapLabel')}</p>
                         </div>
 
-                        <div className="global-list">
-                            <h4>{t('contact.globalPresence')}</h4>
-                            <div className="country-grid">
-                                <span>{t('contact.countries.uae')}</span>
-                                <span>{t('contact.countries.uk')}</span>
-                                <span>{t('contact.countries.usa')}</span>
-                                <span>{t('contact.countries.singapore')}</span>
-                                <span>{t('contact.countries.canada')}</span>
-                                <span>{t('contact.countries.australia')}</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

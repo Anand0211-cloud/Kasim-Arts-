@@ -10,7 +10,7 @@ const About = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        document.title = "Heritage & Legacy | Kashim Arts";
+        document.title = "Oldest Textile Manufacturer in Varanasi";
     }, []);
 
     const timeline = [

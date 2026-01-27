@@ -10,17 +10,17 @@ export const translations = {
         },
         home: {
             hero: {
-                subtitle: "Est. 1885 • Banaras, India",
+                subtitle: "Since 1885 • Banaras, India",
                 titleLine1: "Global Supply,",
                 titleLine2: "Timeless Artistry.",
-                lead: "Empowering international retail chains and private labels with premium B2B saree manufacturing. Unparalleled scale, heritage craft, and global logistical efficiency.",
+                lead: "Empowering international retail chains and private labels with premium B2B textile manufacturing. Unparalleled scale, heritage craft, and global logistical efficiency.",
                 btnCatalog: "Access Global Catalog",
                 btnPartner: "Partner Inquiry"
             },
             positioning: {
                 subtitle: "Core Infrastructure",
                 title: "The Global Standard in Textile Production",
-                desc: "Kasim Arts bridges the gap between rural master weavers and the international luxury market. We operate an end-to-end supply chain ensuring ethical practices, authentic craftsmanship, and uncompromised quality controls for our B2B partners.",
+                desc: "Kasim Arts bridges the gap between rural master weavers and the domestic and international luxury market. We operate an end-to-end supply chain ensuring ethical practices, authentic craftsmanship, and uncompromised quality controls for our B2B partners.",
                 global: "Global",
                 feature1Title: "Private Labeling",
                 feature1Desc: "Complete end-to-end branding integration. From custom fabric tags to bespoke packaging tailored for your domestic and international stores.",
@@ -79,7 +79,7 @@ export const translations = {
             hero: {
                 subtitle: "Since 1885",
                 title: "Kasim Arts: A Legacy of 150+ Years",
-                desc: "Kasim Arts (Kasimarts) is a premier manufacturer and exporter of traditional Banarasi textiles. Established in 1885 by the forefather of the current generation and named after their ancestor, Sheikh Kasim."
+                desc: "Kasim Arts is a premier manufacturer and exporter of traditional Banarasi textiles. Established in 1885 by the forefather of the current generation and named after their ancestor, Sheikh Kasim."
             },
             process: {
                 title: "The Art of Creation",
@@ -102,16 +102,16 @@ export const translations = {
                 title: "Milestones",
                 item1Year: "1885",
                 item1Title: "The Foundation",
-                item1Desc: "Established by Kasim Sheikh, our ancestor, following a prestigious award in the late 19th century.",
+                item1Desc: "Established by Sheikh Kasim, our ancestor, following a prestigious award in the late 19th century.",
                 item2Year: "Legacy",
                 item2Title: "Generational Craft",
-                item2Desc: "A craft passed down through generations, specializing in exquisite Banarasi sarees and Tibetan brocade.",
+                item2Desc: "A craft passed down through generations, specializing in exquisite Banarasi sarees and Tibetan brocades.",
                 item3Year: "Evolution",
                 item3Title: "Modern Adaptation",
                 item3Desc: "Transitioned to high-quality copper wire with silver coating to maintain beauty while managing costs.",
                 item4Year: "Present",
                 item4Title: "3rd Generation Leadership",
-                item4Desc: "Under the leadership of Tafseer Ahmad."
+                item4Desc: "Flourishing under the visionary leadership of Tafseer Ahmad, continuing the legacy of global excellence."
             },
             philosophy: {
                 title: "The Artisans Behind the Label",
@@ -135,13 +135,15 @@ export const translations = {
                 cotton: "Cotton",
                 sarees: "Sarees",
                 suits: "Suits",
-                lehengas: "Lehengas"
+                lehengas: "Lehengas",
+                dressMaterial: "Dress Material",
+                brocade: "Tibetan Brocade"
             },
             products: {
                 silkDesc: "Gold zari work on pure silk.",
-                chiffonDesc: "Lightweight hand-painted flora.",
+                chiffonDesc: "Lightweight woven flora.",
                 linenDesc: "Breathable pure linen fabric.",
-                organzaDesc: "Subtle silver embroidery.",
+                organzaDesc: "Subtle silver woven work.",
                 tusserDesc: "Rich textured wild silk.",
                 spunDesc: "Soft spun blend for daily wear.",
                 cottonDesc: "Traditional handloom cotton."
@@ -207,7 +209,7 @@ export const translations = {
                 step3: {
                     title: "The Weaving Process",
                     intro: "A collaborative effort involving specialized artisans, designers, and editors.",
-                    time: "A single saree can take 8 to 20 days. Loom setup requires years of expertise to master.",
+                    time: "Bespoke saree design and weaving based on your moodboards using authentic techniques. Loom setup requires years of expertise to master.",
                     artistry: "Constant review by owners and designers ensures the \"look\" is refined even after the first production."
                 },
                 step4: {
@@ -232,7 +234,7 @@ export const translations = {
             hqAddress: "A.29/1-A-2, K.P, Pilikothi (Behind Adampupra Police Station) Varanasi-221001",
             unitLabel: "Manufacturing Unit:",
             unitAddress: "Textile Valley, Surat, Gujarat",
-            mapLabel: "Global Export Network",
+            mapLabel: "Varanasi",
             globalPresence: "Global Export",
             hqIndia: "India (HQ)",
             countries: {
@@ -273,17 +275,17 @@ export const translations = {
         },
         home: {
             hero: {
-                subtitle: "स्थापना १८८५ • बनारस, भारत",
+                subtitle: "१८८५ से • बनारस, भारत",
                 titleLine1: "वैश्विक आपूर्ति,",
                 titleLine2: "कालातीत कलात्मकता।",
-                lead: "प्रीमियम बी२बी साड़ी निर्माण के साथ अंतरराष्ट्रीय खुदरा श्रृंखलाओं और निजी लेबलों को सशक्त बनाना। अद्वितीय पैमाना, पारंपरिक शिल्प, और वैश्विक रसद दक्षता।",
+                lead: "प्रीमियम बी२बी वस्त्र निर्माण के साथ अंतरराष्ट्रीय खुदरा श्रृंखलाओं और निजी लेबलों को सशक्त बनाना। अद्वितीय पैमाना, पारंपरिक शिल्प, और वैश्विक रसद दक्षता।",
                 btnCatalog: "वैश्विक कैटलॉग देखें",
                 btnPartner: "साझेदारी पूछताछ"
             },
             positioning: {
                 subtitle: "प्रमुख अवसंरचना",
                 title: "वस्त्र उत्पादन में वैश्विक मानक",
-                desc: "कासिम आर्ट्स ग्रामीण कुशल बुनकरों और अंतरराष्ट्रीय लक्जरी बाजार के बीच की खाई को पाटता है। हम अपने बी२बी भागीदारों के लिए नैतिक प्रथाओं, प्रामाणिक शिल्प कौशल और असम्बद्ध गुणवत्ता नियंत्रण सुनिश्चित करते हुए एक अंत-से-अंत आपूर्ति श्रृंखला संचालित करते हैं।",
+                desc: "कासिम आर्ट्स ग्रामीण कुशल बुनकरों और घरेलू और अंतरराष्ट्रीय लक्जरी बाजार के बीच की खाई को पाटता है। हम अपने बी२बी भागीदारों के लिए नैतिक प्रथाओं, प्रामाणिक शिल्प कौशल और असम्बद्ध गुणवत्ता नियंत्रण सुनिश्चित करते हुए एक अंत-से-अंत आपूर्ति श्रृंखला संचालित करते हैं।",
                 global: "वैश्विक",
                 feature1Title: "निजी लेबलिंग",
                 feature1Desc: "पूर्ण अंत-से-अंत ब्रांडिंग एकीकरण। कस्टम फैब्रिक टैग से लेकर आपके घरेलू और अंतरराष्ट्रीय स्टोर के लिए तैयार पैकेजिंग तक।",
@@ -342,7 +344,7 @@ export const translations = {
             hero: {
                 subtitle: "१८८५ से",
                 title: "कासिम आर्ट्स: १५०+ वर्षों की विरासत",
-                desc: "कासिम आर्ट्स (कासिमआर्ट्स) पारंपरिक बनारसी वस्त्रों का एक प्रमुख निर्माता और निर्यातक है। १८८५ में वर्तमान पीढ़ी के पूर्वज द्वारा स्थापित और उनके पूर्वज, शेख कासिम के नाम पर रखा गया।"
+                desc: "कासिम आर्ट्स पारंपरिक बनारसी वस्त्रों का एक प्रमुख निर्माता और निर्यातक है। १८८५ में वर्तमान पीढ़ी के पूर्वज द्वारा स्थापित और उनके पूर्वज, शेख कासिम के नाम पर रखा गया।"
             },
             process: {
                 title: "सृजन की कला",
@@ -365,7 +367,7 @@ export const translations = {
                 title: "मील के पत्थर",
                 item1Year: "१८८५",
                 item1Title: "नींव",
-                item1Desc: "१९वीं सदी के अंत में एक प्रतिष्ठित पुरस्कार के बाद, हमारे पूर्वज कासिम शेख द्वारा स्थापित।",
+                item1Desc: "१९वीं सदी के अंत में एक प्रतिष्ठित पुरस्कार के बाद, हमारे पूर्वज शेख कासिम द्वारा स्थापित।",
                 item2Year: "विरासत",
                 item2Title: "पीढ़ीगत शिल्प",
                 item2Desc: "पीढ़ियों से चला आ रहा एक शिल्प, जो उत्कृष्ट बनारसी साड़ियों और तिब्बती ब्रोकेड में विशेषज्ञता रखता है।",
@@ -374,7 +376,7 @@ export const translations = {
                 item3Desc: "लागत का प्रबंधन करते हुए सुंदरता बनाए रखने के लिए चांदी की कोटिंग के साथ उच्च गुणवत्ता वाले तांबे के तार में संक्रमण।",
                 item4Year: "वर्तमान",
                 item4Title: "तीसरी पीढ़ी का नेतृत्व",
-                item4Desc: "तफसीर अहमद के नेतृत्व में।"
+                item4Desc: "तफसीर अहमद के दूरदर्शी नेतृत्व में फल-फूल रहा है, वैश्विक उत्कृष्टता की विरासत को जारी रखते हुए।"
             },
             philosophy: {
                 title: "लेबल के पीछे के कारीगर",
@@ -398,13 +400,15 @@ export const translations = {
                 cotton: "सूती",
                 sarees: "साड़ी",
                 suits: "सूट",
-                lehengas: "लहंगा"
+                lehengas: "लहंगा",
+                dressMaterial: "ड्रेस सामग्री",
+                brocade: "तिब्बती ब्रोकेड"
             },
             products: {
                 silkDesc: "शुद्ध रेशम पर सोने का ज़री काम।",
-                chiffonDesc: "हल्के हाथ से पेंट किए गए वनस्पति।",
+                chiffonDesc: "हल्के बुने हुए वनस्पति।",
                 linenDesc: "सांस लेने योग्य शुद्ध लिनन कपड़ा।",
-                organzaDesc: "सूक्ष्म चांदी की कढ़ाई।",
+                organzaDesc: "सूक्ष्म चांदी की बुनाई।",
                 tusserDesc: "समृद्ध बनावट वाला जंगली रेशम।",
                 spunDesc: "दैनिक पहनने के लिए नरम काता मिश्रण।",
                 cottonDesc: "पारंपरिक हथकरघा कपास।"
@@ -470,7 +474,7 @@ export const translations = {
                 step3: {
                     title: "बुनाई प्रक्रिया",
                     intro: "विशेष कारीगरों, डिजाइनरों और संपादकों को शामिल करने वाला एक सहयोगात्मक प्रयास।",
-                    time: "एक साड़ी को पूरा होने में ८ से २० दिन लग सकते हैं। लूम सेटअप के लिए वर्षों की विशेषज्ञता की आवश्यकता होती है।",
+                    time: "प्रामाणिक तकनीकों का उपयोग करके आपके मूडबोर्ड के आधार पर विशेष साड़ी डिजाइन और बुनाई। लूम सेटअप के लिए वर्षों की विशेषज्ञता की आवश्यकता होती है।",
                     artistry: "मालिकों और डिजाइनरों द्वारा निरंतर समीक्षा यह सुनिश्चित करती है कि पहले उत्पादन के बाद भी \"लुक\" को परिष्कृत किया जाए।"
                 },
                 step4: {
@@ -495,7 +499,7 @@ export const translations = {
             hqAddress: "ए.२९/१-ए-२, के.पी, पीलीकोठी (आदमपुरा पुलिस स्टेशन के पीछे) वाराणसी-२२१००१",
             unitLabel: "निर्माण इकाई:",
             unitAddress: "टेक्सटाइल वैली, सूरत, गुजरात",
-            mapLabel: "वैश्विक निर्यात नेटवर्क",
+            mapLabel: "वाराणसी",
             globalPresence: "वैश्विक निर्यात",
             hqIndia: "भारत (मुख्यालय)",
             countries: {
