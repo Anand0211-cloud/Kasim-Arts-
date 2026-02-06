@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import silkImg from '../assets/collection-silk.png';
-import chiffonImg from '../assets/collection-chiffon.png';
-import linenImg from '../assets/collection-linen.png';
+import silkImg from '../assets/collection-silk-new.jpg';
+import chiffonImg from '../assets/collection-chiffon-new.jpg';
+import linenImg from '../assets/collection-linen-new.jpg';
 import organzaImg from '../assets/collection-organza.png';
-import tusserImg from '../assets/collection-tusser.png';
+import tusserImg from '../assets/collection-tusser-new.jpg';
 import spunImg from '../assets/collection-spun.png';
 import cottonImg from '../assets/collection-cotton.png';
 import './Collections.css';

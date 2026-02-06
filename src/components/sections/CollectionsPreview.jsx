@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import silkImg from '../../assets/collection-silk.png';
+import silkImg from '../../assets/collection-silk-new.jpg';
 import suitImg from '../../assets/collection-suit.png';
 import lehengaImg from '../../assets/collection-lehenga.png';
 import dressMaterialImg from '../../assets/collection-dress-material.png';
-import brocadeImg from '../../assets/collection-brocade.png';
+import brocadeImg from '../../assets/collection-brocade-new.jpg';
 import './CollectionsPreview.css';
 
 const collections = [
