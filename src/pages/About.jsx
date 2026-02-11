@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import heritageHero from '../assets/heritage-hero-new.jpg';
+import heritageHero from '../assets/heritage-hero-new.JPG';
 import processWeaving from '../assets/process-weaving-new.jpeg';
 import processDyeing from '../assets/process-dyeing-new.jpeg';
 import VideoSection from '../components/sections/VideoSection';
