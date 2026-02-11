@@ -41,9 +41,22 @@ const Contact = () => {
                                     <FiPhone className="info-icon" />
                                     <div>+91 75250 81550</div>
                                 </li>
-                                <li>
-                                    <FiMail className="info-icon" />
-                                    <div>kasimartsworld@gmail.com</div>
+                                <li style={{ alignItems: 'flex-start' }}>
+                                    <FiMail className="info-icon" style={{ marginTop: '5px' }} />
+                                    <div style={{ width: '100%' }}>
+                                        <div style={{ marginBottom: '15px' }}>
+                                            <strong style={{ display: 'block', marginBottom: '4px', color: 'var(--color-gold-primary)' }}>
+                                                {t('contact.internationalEnquiry')}
+                                            </strong>
+                                            <a href="mailto:info@kasimarts.com" style={{ fontSize: '1.1rem' }}>info@kasimarts.com</a>
+                                        </div>
+                                        <div>
+                                            <strong style={{ display: 'block', marginBottom: '4px', color: 'var(--color-gold-primary)' }}>
+                                                {t('contact.nationalEnquiry')}
+                                            </strong>
+                                            <a href="mailto:kasimartsworld@gmail.com" style={{ fontSize: '1.1rem' }}>kasimartsworld@gmail.com</a>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

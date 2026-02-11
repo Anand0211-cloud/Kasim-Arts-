@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import silkImg from '../../assets/collection-silk-new.jpg';
-import suitImg from '../../assets/collection-suit.png';
-import lehengaImg from '../../assets/collection-lehenga.png';
-import dressMaterialImg from '../../assets/collection-dress-material.png';
+import silkImg from '../../assets/collection-saree-new.jpg';
+import suitImg from '../../assets/collection-suit-new.jpg';
+import lehengaImg from '../../assets/collection-lehenga-new.jpg';
+import dressMaterialImg from '../../assets/collection-dress-material.jpeg';
 import brocadeImg from '../../assets/collection-brocade-new.jpg';
 import './CollectionsPreview.css';
 
@@ -53,8 +53,16 @@ const CollectionsPreview = () => {
                 <div className="collections-grid">
                     {collections.map((item) => (
                         <div key={item.id} className="collection-card">
-                            <div className="collection-image-wrapper">
-                                <img src={item.image} alt={t(`collections.filters.${item.titleKey}`)} className="collection-image" />
+                            <div
+                                className="collection-image-wrapper"
+                                style={{ aspectRatio: '4/5', height: 'auto' }}
+                            >
+                                <img
+                                    src={item.image}
+                                    alt={t(`collections.filters.${item.titleKey}`)}
+                                    className="collection-image"
+                                    style={{ objectPosition: 'center' }}
+                                />
                                 <div className="placeholder-overlay"></div>
                             </div>
                             <div className="collection-info">

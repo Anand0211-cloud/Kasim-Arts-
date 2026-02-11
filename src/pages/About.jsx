@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import heritageHero from '../assets/heritage-hero-new.png';
-import processWeaving from '../assets/process-weaving.png';
-import processDyeing from '../assets/process-dyeing.png';
+import heritageHero from '../assets/heritage-hero-new.jpg';
+import processWeaving from '../assets/process-weaving-new.jpeg';
+import processDyeing from '../assets/process-dyeing-new.jpeg';
+import VideoSection from '../components/sections/VideoSection';
 import './About.css';
 
 const About = () => {
@@ -12,6 +13,11 @@ const About = () => {
         window.scrollTo(0, 0);
         document.title = "Oldest Textile Manufacturer in Varanasi";
     }, []);
+    // ... (omitting unchanged lines for brevity in LLM thought process, but providing full context in tool call)
+    // Actually I need to be careful with replace_file_content. I'll target the import block and the render block separately if possible, or just the whole file if small enough.
+    // About.jsx is somewhat large. usage of `replace_file_content` requires exact match.
+    // I will do it in two steps: 1. Add import. 2. Add component.
+
 
     const timeline = [
         { year: t('about.timeline.item1Year'), title: t('about.timeline.item1Title'), desc: t('about.timeline.item1Desc') },
@@ -46,7 +52,18 @@ const About = () => {
                     <div className="process-grid">
                         <div className="process-card">
                             <div className="process-img-wrapper">
-                                <img src={processWeaving} alt="Handloom Weaving Process" className="process-img" />
+                                <img
+                                    src={processWeaving}
+                                    alt="Handloom Weaving Process"
+                                    className="process-img"
+                                    style={{
+                                        width: '75%',
+                                        height: 'auto',
+                                        margin: '0 auto',
+                                        display: 'block',
+                                        boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                                    }}
+                                />
                             </div>
                             <div className="process-content">
                                 <h3>{t('about.process.weavingTitle')}</h3>
@@ -57,7 +74,18 @@ const About = () => {
                         </div>
                         <div className="process-card reverse">
                             <div className="process-img-wrapper">
-                                <img src={processDyeing} alt="Traditional Dyeing Process" className="process-img" />
+                                <img
+                                    src={processDyeing}
+                                    alt="Traditional Dyeing Process"
+                                    className="process-img"
+                                    style={{
+                                        width: '75%',
+                                        height: 'auto',
+                                        margin: '0 auto',
+                                        display: 'block',
+                                        boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                                    }}
+                                />
                             </div>
                             <div className="process-content">
                                 <h3>{t('about.process.dyeingTitle')}</h3>
@@ -112,6 +140,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
+            <VideoSection />
 
             {/* Craftsmanship Philosophy - Kept exactly as user liked */}
             <section className="philosophy-section">

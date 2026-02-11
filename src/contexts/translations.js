@@ -141,6 +141,9 @@ export const translations = {
             },
             products: {
                 silkDesc: "Gold zari work on pure silk.",
+                sareesDesc: "Exquisite handwoven Banarasi sarees.",
+                suitsDesc: "Elegant handloom suits and materials.",
+                lehengasDesc: "Traditional bridal and festive lehengas.",
                 chiffonDesc: "Lightweight woven flora.",
                 linenDesc: "Breathable pure linen fabric.",
                 organzaDesc: "Subtle silver woven work.",
@@ -244,7 +247,9 @@ export const translations = {
                 singapore: "Singapore",
                 canada: "Canada",
                 australia: "Australia"
-            }
+            },
+            internationalEnquiry: "International Inquiry:",
+            nationalEnquiry: "National Inquiry:"
         },
         footer: {
             desc: "Premier manufacturer and global exporter of authentic Indian sarees and luxury textiles. Woven with heritage, delivered worldwide.",
@@ -262,6 +267,9 @@ export const translations = {
                 organza: "Organza",
                 linen: "Linen"
             }
+        },
+        video: {
+            title: "Kasim Arts Documentary"
         }
     },
     hi: {
@@ -509,7 +517,9 @@ export const translations = {
                 singapore: "सिंगापुर",
                 canada: "कनाडा",
                 australia: "Australia"
-            }
+            },
+            internationalEnquiry: "अंतर्राष्ट्रीय पूछताछ:",
+            nationalEnquiry: "राष्ट्रीय पूछताछ:"
         },
         footer: {
             desc: "प्रामाणिक भारतीय साड़ियों और लक्जरी वस्त्रों का प्रमुख निर्माता और वैश्विक निर्यातक। विरासत के साथ बुना हुआ, दुनिया भर में वितरित।",
@@ -527,6 +537,9 @@ export const translations = {
                 organza: "ओर्गान्जा",
                 linen: "लिनन"
             }
+        },
+        video: {
+            title: "कासिम आर्ट्स डॉक्यूमेंट्री"
         }
     }
 };

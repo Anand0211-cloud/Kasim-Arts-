@@ -3,6 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Hero from '../components/sections/Hero';
 import BrandPositioning from '../components/sections/BrandPositioning';
 import CollectionsPreview from '../components/sections/CollectionsPreview';
+import VideoSection from '../components/sections/VideoSection';
 import CTABanner from '../components/common/CTABanner';
 import ContactFormSection from '../components/sections/ContactFormSection';
 
@@ -18,6 +19,7 @@ const Home = () => {
             <Hero />
             <BrandPositioning />
             <CollectionsPreview />
+            <VideoSection />
             <ContactFormSection title={t('home.contactForm.title')} showHeader={true} />
             <CTABanner />
         </div>

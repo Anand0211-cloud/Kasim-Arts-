@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import silkImg from '../assets/collection-silk-new.jpg';
+import silkImg from '../assets/collection-silk-final.jpg';
 import chiffonImg from '../assets/collection-chiffon-new.jpg';
 import linenImg from '../assets/collection-linen-new.jpg';
-import organzaImg from '../assets/collection-organza.png';
+import organzaImg from '../assets/collection-organza.jpg';
 import tusserImg from '../assets/collection-tusser-new.jpg';
 import spunImg from '../assets/collection-spun.png';
 import cottonImg from '../assets/collection-cotton.png';
@@ -11,7 +11,7 @@ import './Collections.css';
 
 // Mock Data
 const products = [
-    { id: 1, category: "silk", image: silkImg },
+    { id: 1, category: "silk", image: silkImg }, // Used for Saree
     { id: 2, category: "chiffon", image: chiffonImg },
     { id: 3, category: "linen", image: linenImg },
     { id: 4, category: "organza", image: organzaImg },
@@ -70,8 +70,21 @@ const Collections = () => {
                 <div className="product-grid">
                     {filteredProducts.map(product => (
                         <div key={product.id} className="product-card">
-                            <div className="product-image-wrapper">
-                                <img src={product.image} alt={t(`collections.filters.${product.category}`)} className="product-img" />
+                            <div
+                                className="product-image"
+                                style={{ aspectRatio: '4/5', height: 'auto' }}
+                            >
+                                <img
+                                    src={product.image}
+                                    alt={t(`collections.filters.${product.category}`)}
+                                    className="product-img"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover',
+                                        objectPosition: 'center'
+                                    }}
+                                />
                                 {/* Overlay / Placeholder */}
                                 <div className="hover-overlay">
                                     <span className="view-text">{t('collections.card.request')}</span>
