@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { getWhatsAppLink } from '../utils/whatsapp';
 import silkImg from '../assets/collection-silk-final.jpg';
 import chiffonImg from '../assets/collection-chiffon-new.jpg';
 import linenImg from '../assets/collection-linen-new.jpg';
@@ -87,13 +88,29 @@ const Collections = () => {
                                 />
                                 {/* Overlay / Placeholder */}
                                 <div className="hover-overlay">
-                                    <span className="view-text">{t('collections.card.request')}</span>
+                                    <a
+                                        href={getWhatsAppLink(`Please share more detail about ${t(`collections.filters.${product.category}`)}`)}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="view-text"
+                                        style={{ textDecoration: 'none', color: 'inherit' }}
+                                    >
+                                        {t('collections.card.request')}
+                                    </a>
                                 </div>
                             </div>
                             <div className="product-info">
                                 <h3 className="product-name">{t(`collections.filters.${product.category}`)}</h3>
                                 <p className="product-desc">{t(`collections.products.${product.category}Desc`)}</p>
-                                <button className="btn-inquiry">{t('collections.card.inquiry')}</button>
+                                <a
+                                    href={getWhatsAppLink(`I would like to raise an inquiry about ${t(`collections.filters.${product.category}`)}`)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn-inquiry"
+                                    style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
+                                >
+                                    {t('collections.card.inquiry')}
+                                </a>
                             </div>
                         </div>
                     ))}

@@ -49,7 +49,13 @@ const Header = () => {
                         <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
                             {theme === 'dark' ? <FiSun size={20} /> : <FiMoon size={20} />}
                         </button>
-                        <Link to="/contact" className="btn-primary" onClick={closeMenu}>{t('nav.b2bInquiry')}</Link>
+                        <a
+                            href="mailto:kasimartsworld@gmail.com?subject=B2B Inquiry for Kasim Arts&body=Hello, I am interested in B2B partnership with Kasim Arts. Please provide more details."
+                            className="btn-primary"
+                            onClick={closeMenu}
+                        >
+                            {t('nav.b2bInquiry')}
+                        </a>
                     </div>
                 </nav>
             </div>

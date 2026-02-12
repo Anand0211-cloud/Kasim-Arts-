@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { getWhatsAppLink } from '../../utils/whatsapp';
 import silkImg from '../../assets/collection-saree-new.jpg';
 import suitImg from '../../assets/collection-suit-new.jpg';
 import lehengaImg from '../../assets/collection-lehenga-new.jpg';
@@ -67,7 +68,15 @@ const CollectionsPreview = () => {
                             </div>
                             <div className="collection-info">
                                 <h3 className="collection-title">{t(`collections.filters.${item.titleKey}`)}</h3>
-                                <Link to="/collections" className="btn-text">{t('collections.card.request')} &rarr;</Link>
+                                <a
+                                    href={getWhatsAppLink(`Please share more detail about ${t(`collections.filters.${item.titleKey}`)}`)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn-text"
+                                    style={{ textDecoration: 'none', cursor: 'pointer' }}
+                                >
+                                    {t('collections.card.request')} &rarr;
+                                </a>
                             </div>
                         </div>
                     ))}
