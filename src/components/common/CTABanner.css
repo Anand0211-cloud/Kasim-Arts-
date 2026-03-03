@@ -1,5 +1,5 @@
 .cta-banner {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background-color: var(--color-black);
     color: var(--color-white);
     position: relative;
@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 768px) {
+    .cta-banner {
+        padding: 2rem 0;
+    }
+
     .cta-title {
         font-size: 2rem;
     }

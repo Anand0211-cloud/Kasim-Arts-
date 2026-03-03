@@ -19,10 +19,10 @@
   --text-secondary: var(--color-charcoal);
   --text-muted: var(--color-gray-medium);
   --border-color: var(--color-gray-light);
-  
+
   /* Layout */
   --container-max-width: 1440px;
-  --header-height: 80px;
+  --header-height: 65px;
 }
 
 [data-theme='dark'] {

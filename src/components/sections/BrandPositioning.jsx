@@ -15,14 +15,16 @@ const BrandPositioning = () => {
     return (
         <section className="positioning-section">
             <div className="container">
-                <div className="positioning-grid">
-                    <div className="positioning-content">
-                        <h5 className="section-subtitle">{t('home.positioning.subtitle')}</h5>
-                        <h2 className="section-title">{t('home.positioning.title')}</h2>
-                        <p className="section-desc">
-                            {t('home.positioning.desc')}
-                        </p>
-                        <div className="features-list">
+                <div className="positioning-wrapper">
+                    <div className="positioning-top-grid">
+                        <div className="positioning-left">
+                            <h5 className="section-subtitle">{t('home.positioning.subtitle')}</h5>
+                            <h2 className="section-title">{t('home.positioning.title')}</h2>
+                            <p className="section-desc">
+                                {t('home.positioning.desc')}
+                            </p>
+                        </div>
+                        <div className="positioning-right features-list">
                             <div className="feature-item">
                                 <h3>{t('home.positioning.feature1Title')}</h3>
                                 <p>{t('home.positioning.feature1Desc')}</p>

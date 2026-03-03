@@ -21,8 +21,7 @@ const Contact = () => {
                 <div className="contact-layout">
                     {/* Inquiry Form */}
                     <div className="contact-form-wrapper-page">
-                        {/* Wrapper purely for layout positioning if needed, or pass styles to component */}
-                        <ContactFormSection />
+                        <ContactFormSection variant="single" />
                     </div>
 
                     {/* Sidebar / Info */}
@@ -39,23 +38,12 @@ const Contact = () => {
                                 </li>
                                 <li>
                                     <FiPhone className="info-icon" />
-                                    <div>+91 75250 81550</div>
+                                    <div>+91 92781 81550</div>
                                 </li>
                                 <li style={{ alignItems: 'flex-start' }}>
                                     <FiMail className="info-icon" style={{ marginTop: '5px' }} />
                                     <div style={{ width: '100%' }}>
-                                        <div style={{ marginBottom: '15px' }}>
-                                            <strong style={{ display: 'block', marginBottom: '4px', color: 'var(--color-gold-primary)' }}>
-                                                {t('contact.internationalEnquiry')}
-                                            </strong>
-                                            <a href="mailto:info@kasimarts.com" style={{ fontSize: '1.1rem' }}>info@kasimarts.com</a>
-                                        </div>
-                                        <div>
-                                            <strong style={{ display: 'block', marginBottom: '4px', color: 'var(--color-gold-primary)' }}>
-                                                {t('contact.nationalEnquiry')}
-                                            </strong>
-                                            <a href="mailto:kasimartsworld@gmail.com" style={{ fontSize: '1.1rem' }}>kasimartsworld@gmail.com</a>
-                                        </div>
+                                        <a href="mailto:info@kasimarts.com" style={{ fontSize: '1.1rem' }}>info@kasimarts.com</a>
                                     </div>
                                 </li>
                             </ul>

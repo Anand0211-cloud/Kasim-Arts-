@@ -57,20 +57,11 @@ const Footer = () => {
                             </li>
                             <li>
                                 <FiPhone className="icon" />
-                                <span>+91 75250 81550</span>
+                                <span>+91 92781 81550</span>
                             </li>
-                            <li style={{ alignItems: 'flex-start' }}>
-                                <FiMail className="icon" style={{ marginTop: '5px' }} />
-                                <div>
-                                    <div style={{ marginBottom: '8px' }}>
-                                        <small style={{ display: 'block', opacity: 0.7, fontSize: '0.75rem' }}>{t('contact.internationalEnquiry')}</small>
-                                        <span>info@kasimarts.com</span>
-                                    </div>
-                                    <div>
-                                        <small style={{ display: 'block', opacity: 0.7, fontSize: '0.75rem' }}>{t('contact.nationalEnquiry')}</small>
-                                        <span>kasimartsworld@gmail.com</span>
-                                    </div>
-                                </div>
+                            <li>
+                                <FiMail className="icon" />
+                                <span><a href="mailto:info@kasimarts.com">info@kasimarts.com</a></span>
                             </li>
                         </ul>
                     </div>

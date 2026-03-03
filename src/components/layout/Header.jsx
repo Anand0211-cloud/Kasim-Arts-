@@ -44,7 +44,7 @@ const Header = () => {
                     <div className="header-actions">
                         <button onClick={toggleLanguage} className="lang-toggle" aria-label="Switch Language">
                             <FiGlobe size={18} />
-                            <span>{language === 'en' ? 'HI' : 'EN'}</span>
+                            <span>{language === 'en' ? 'हिंदी' : 'EN'}</span>
                         </button>
                         <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
                             {theme === 'dark' ? <FiSun size={20} /> : <FiMoon size={20} />}
