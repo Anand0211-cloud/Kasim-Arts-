@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import heroBg from '../../assets/hero-bg-final.jpg';
+import heroBg from '../../assets/b1.jpeg';
 import './Hero.css';
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <section className="hero-section" style={{ backgroundImage: `url(${heroBg})` }}>
-            <div className="hero-overlay"></div>
+
             <div className="container hero-content">
                 <span className="hero-subtitle fade-in-up">{t('home.hero.subtitle')}</span>
                 <h1 className="hero-title fade-in-up delay-1">

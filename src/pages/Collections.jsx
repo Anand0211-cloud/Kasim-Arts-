@@ -5,9 +5,9 @@ import silkImg from '../assets/collection-silk-final.jpg';
 import chiffonImg from '../assets/collection-chiffon-new.jpg';
 import linenImg from '../assets/collection-linen-new.jpg';
 import organzaImg from '../assets/collection-organza.jpg';
-import tusserImg from '../assets/collection-tusser-new.jpg';
-import spunImg from '../assets/collection-spun.png';
-import cottonImg from '../assets/collection-cotton.png';
+import tusserImg from '../assets/Tusser.jpg';
+import spunImg from '../assets/Spun.jpg';
+import cottonImg from '../assets/Cotton.jpg';
 import './Collections.css';
 
 // Mock Data
