@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import heroBg from '../../assets/b1.jpeg';
+import heroBg from '../../assets/b1.png';
 import './Hero.css';
 
 const Hero = () => {
