@@ -3,18 +3,47 @@ import { translations } from './translations';
 
 const LanguageContext = createContext();
 
+export const LANGUAGES = [
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'hi', label: 'हिंदी', flag: '🇮🇳' },
+    { code: 'zh', label: '中文', flag: '🇨🇳' },
+    { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'ar', label: 'العربية', flag: '🇸🇦' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'pt', label: 'Português', flag: '🇧🇷' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'ja', label: '日本語', flag: '🇯🇵' },
+    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+    { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+];
+
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState(() => {
+    const [language, setLanguageState] = useState(() => {
         const saved = localStorage.getItem('language');
-        return saved || 'en';
+        // Validate saved language is still supported
+        if (saved && LANGUAGES.some(l => l.code === saved)) {
+            return saved;
+        }
+        return 'en';
     });
 
     useEffect(() => {
         localStorage.setItem('language', language);
+        // Set HTML dir attribute for RTL languages (Arabic)
+        document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
     }, [language]);
 
+    const setLanguage = (code) => {
+        if (LANGUAGES.some(l => l.code === code)) {
+            setLanguageState(code);
+        }
+    };
+
+    // Keep toggleLanguage for backward compatibility (cycles through languages)
     const toggleLanguage = () => {
-        setLanguage(prev => prev === 'en' ? 'hi' : 'en');
+        const currentIndex = LANGUAGES.findIndex(l => l.code === language);
+        const nextIndex = (currentIndex + 1) % LANGUAGES.length;
+        setLanguageState(LANGUAGES[nextIndex].code);
     };
 
     // Helper to get nested translation keys like 'nav.home'
@@ -26,15 +55,23 @@ export const LanguageProvider = ({ children }) => {
             if (value && value[k]) {
                 value = value[k];
             } else {
-                console.warn(`Translation missing for key: ${key} in language: ${language}`);
-                return key; // Fallback to key if missing
+                // Fallback to English
+                let fallback = translations['en'];
+                for (const fk of keys) {
+                    if (fallback && fallback[fk]) {
+                        fallback = fallback[fk];
+                    } else {
+                        return key;
+                    }
+                }
+                return fallback;
             }
         }
         return value;
     };
 
     return (
-        <LanguageContext.Provider value={{ language, toggleLanguage, t }}>
+        <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, t }}>
             {children}
         </LanguageContext.Provider>
     );
