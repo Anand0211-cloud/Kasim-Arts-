@@ -71,7 +71,14 @@ const Header = () => {
                                 aria-expanded={isLangOpen}
                             >
                                 <FiGlobe size={18} />
-                                <span className="lang-current-label">{currentLang.flag} {currentLang.label}</span>
+                                <span className="lang-current-label">
+                                    <img 
+                                        src={`https://flagcdn.com/w40/${currentLang.countryCode}.png`} 
+                                        alt={currentLang.label}
+                                        className="lang-flag-img"
+                                    />
+                                    {currentLang.label}
+                                </span>
                                 <FiChevronDown size={14} className={`lang-chevron ${isLangOpen ? 'open' : ''}`} />
                             </button>
                             {isLangOpen && (
@@ -82,7 +89,11 @@ const Header = () => {
                                             className={`lang-option ${language === lang.code ? 'active' : ''}`}
                                             onClick={() => handleLangSelect(lang.code)}
                                         >
-                                            <span className="lang-option-flag">{lang.flag}</span>
+                                            <img 
+                                                src={`https://flagcdn.com/w40/${lang.countryCode}.png`} 
+                                                alt={lang.label}
+                                                className="lang-option-flag"
+                                            />
                                             <span className="lang-option-label">{lang.label}</span>
                                             {language === lang.code && <span className="lang-check">✓</span>}
                                         </button>

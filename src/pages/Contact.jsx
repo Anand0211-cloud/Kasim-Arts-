@@ -42,8 +42,9 @@ const Contact = () => {
                                 </li>
                                 <li style={{ alignItems: 'flex-start' }}>
                                     <FiMail className="info-icon" style={{ marginTop: '5px' }} />
-                                    <div style={{ width: '100%' }}>
+                                    <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                                         <a href="mailto:info@kasimarts.com" style={{ fontSize: '1.1rem' }}>info@kasimarts.com</a>
+                                        <a href="mailto:europe@kasimarts.com" style={{ fontSize: '1.1rem' }}>europe@kasimarts.com</a>
                                     </div>
                                 </li>
                             </ul>

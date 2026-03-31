@@ -63,6 +63,10 @@ const Footer = () => {
                                 <FiMail className="icon" />
                                 <span><a href="mailto:info@kasimarts.com">info@kasimarts.com</a></span>
                             </li>
+                            <li>
+                                <FiMail className="icon" />
+                                <span><a href="mailto:europe@kasimarts.com">europe@kasimarts.com</a></span>
+                            </li>
                         </ul>
                     </div>
                 </div>

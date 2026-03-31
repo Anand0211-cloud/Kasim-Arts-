@@ -4,17 +4,17 @@ import { translations } from './translations';
 const LanguageContext = createContext();
 
 export const LANGUAGES = [
-    { code: 'en', label: 'English', flag: '🇬🇧' },
-    { code: 'hi', label: 'हिंदी', flag: '🇮🇳' },
-    { code: 'zh', label: '中文', flag: '🇨🇳' },
-    { code: 'es', label: 'Español', flag: '🇪🇸' },
-    { code: 'ar', label: 'العربية', flag: '🇸🇦' },
-    { code: 'fr', label: 'Français', flag: '🇫🇷' },
-    { code: 'pt', label: 'Português', flag: '🇧🇷' },
-    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-    { code: 'ja', label: '日本語', flag: '🇯🇵' },
-    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-    { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+    { code: 'en', label: 'English', flag: '🇬🇧', countryCode: 'gb' },
+    { code: 'hi', label: 'हिंदी', flag: '🇮🇳', countryCode: 'in' },
+    { code: 'zh', label: '中文', flag: '🇨🇳', countryCode: 'cn' },
+    { code: 'es', label: 'Español', flag: '🇪🇸', countryCode: 'es' },
+    { code: 'ar', label: 'العربية', flag: '🇸🇦', countryCode: 'sa' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷', countryCode: 'fr' },
+    { code: 'pt', label: 'Português', flag: '🇧🇷', countryCode: 'br' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪', countryCode: 'de' },
+    { code: 'ja', label: '日本語', flag: '🇯🇵', countryCode: 'jp' },
+    { code: 'ru', label: 'Русский', flag: '🇷🇺', countryCode: 'ru' },
+    { code: 'tr', label: 'Türkçe', flag: '🇹🇷', countryCode: 'tr' },
 ];
 
 export const LanguageProvider = ({ children }) => {
