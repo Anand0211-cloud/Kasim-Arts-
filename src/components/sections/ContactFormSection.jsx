@@ -4,7 +4,7 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import '../../pages/Contact.css';
 
 const ContactFormSection = ({ title, showHeader = false, variant = 'split' }) => {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     const [formData, setFormData] = React.useState({
         name: '',
@@ -42,7 +42,9 @@ Message:
 ${formData.message}
         `.trim();
 
-        const mailtoLink = `mailto:kasimartsworld@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const isEuropean = ['fr', 'es', 'pt', 'de', 'ru', 'tr'].includes(language);
+        const recipient = isEuropean ? 'sunay.eu@Kasimarts.com' : 'kasimartsworld@gmail.com';
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         window.location.href = mailtoLink;
     };
