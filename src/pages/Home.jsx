@@ -4,6 +4,7 @@ import Hero from '../components/sections/Hero';
 import BrandPositioning from '../components/sections/BrandPositioning';
 import CollectionsPreview from '../components/sections/CollectionsPreview';
 import VideoSection from '../components/sections/VideoSection';
+import VisitSection from '../components/sections/VisitSection';
 import CTABanner from '../components/common/CTABanner';
 import ContactFormSection from '../components/sections/ContactFormSection';
 
@@ -20,6 +21,7 @@ const Home = () => {
             <BrandPositioning />
             <CollectionsPreview />
             <VideoSection />
+            <VisitSection />
             <ContactFormSection title={t('home.contactForm.title')} showHeader={true} />
             <CTABanner />
         </div>
