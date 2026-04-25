@@ -272,9 +272,9 @@ export const translations = {
             title: "Kasim Arts Documentary"
         },
         visit: {
-            title: "Explore our textile collection in person—schedule a visit or get in touch below.",
-            europe: "For EUROPE",
-            uae: "For UAE",
+            title: "To feel the fabric in person, schedule a visit.",
+            europe: "To feel the fabric in Europe",
+            uae: "To feel the fabric in UAE",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "Send Email"
@@ -550,9 +550,9 @@ export const translations = {
             title: "कासिम आर्ट्स डॉक्यूमेंट्री"
         },
         visit: {
-            title: "हमारे टेक्सटाइल कलेक्शन को व्यक्तिगत रूप से देखें—विजिट शेड्यूल करें या नीचे संपर्क करें।",
-            europe: "यूरोप के लिए",
-            uae: "यूएई के लिए",
+            title: "कपड़े को व्यक्तिगत रूप से महसूस करने के लिए, विजिट शेड्यूल करें।",
+            europe: "यूरोप में कपड़े को महसूस करने के लिए",
+            uae: "यूएई में कपड़े को महसूस करने के लिए",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "ईमेल भेजें"
@@ -580,9 +580,9 @@ export const translations = {
         footer: { desc: "正宗印度纱丽和奢华纺织品的首要制造商和全球出口商。以传承编织，交付全球。", links: "快速链接", collections: "系列", contact: "联系总部", legal: { privacy: "隐私政策", terms: "贸易条款", rights: "版权所有。" }, items: { silk: "丝绸", chiffon: "雪纺", organza: "欧根纱", linen: "亚麻" } },
         video: { title: "Kasim Arts 纪录片" },
         visit: {
-            title: "亲身探索我们的纺织系列——安排参观或在下方联系我们。",
-            europe: "欧洲地区",
-            uae: "阿联酋地区",
+            title: "如需亲身体验面料，请安排访问。",
+            europe: "在欧洲体验面料",
+            uae: "在阿联酋体验面料",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "发送邮件"
@@ -610,9 +610,9 @@ export const translations = {
         footer: { desc: "Fabricante premier y exportador global de saris indios auténticos y textiles de lujo. Tejidos con herencia, entregados en todo el mundo.", links: "Enlaces Rápidos", collections: "Colecciones", contact: "Contactar Sede", legal: { privacy: "Política de Privacidad", terms: "Términos de Comercio", rights: "Todos los derechos reservados." }, items: { silk: "Seda", chiffon: "Chifón", organza: "Organza", linen: "Lino" } },
         video: { title: "Documental de Kasim Arts" },
         visit: {
-            title: "Explore nuestra colección textil en persona: programe una visita o póngase en contacto a continuación.",
-            europe: "Para EUROPA",
-            uae: "Para EAU",
+            title: "Para sentir la tela en persona, programe una visita.",
+            europe: "Para sentir la tela en Europa",
+            uae: "Para sentir la tela en los EAU",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "Enviar Correo"
@@ -640,9 +640,9 @@ export const translations = {
         footer: { desc: "المصنع الرائد والمصدر العالمي للساري الهندي الأصيل والمنسوجات الفاخرة. منسوج بالتراث، يُسلم في جميع أنحاء العالم.", links: "روابط سريعة", collections: "المجموعات", contact: "الاتصال بالمقر", legal: { privacy: "سياسة الخصوصية", terms: "شروط التجارة", rights: "جميع الحقوق محفوظة." }, items: { silk: "حرير", chiffon: "شيفون", organza: "أورغانزا", linen: "كتان" } },
         video: { title: "وثائقي Kasim Arts" },
         visit: {
-            title: "استكشف مجموعة المنسوجات لدينا شخصيًا - حدد موعدًا لزيارة أو تواصل معنا أدناه.",
-            europe: "لأوروبا",
-            uae: "للإمارات العربية المتحدة",
+            title: "لتشعر بالقماش شخصيًا، قم بجدولة زيارة.",
+            europe: "لتشعر بالقماش في أوروبا",
+            uae: "لتشعر بالقماش في الإمارات",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "إرسال بريد إلكتروني"
@@ -670,9 +670,9 @@ export const translations = {
         footer: { desc: "Fabricant premier et exportateur mondial de saris indiens authentiques et textiles de luxe.", links: "Liens Rapides", collections: "Collections", contact: "Contacter le Siège", legal: { privacy: "Politique de Confidentialité", terms: "Conditions Commerciales", rights: "Tous droits réservés." }, items: { silk: "Soie", chiffon: "Mousseline", organza: "Organza", linen: "Lin" } },
         video: { title: "Documentaire Kasim Arts" },
         visit: {
-            title: "Explorez notre collection de textiles en personne — planifiez une visite ou contactez-nous ci-dessous.",
-            europe: "Pour l'EUROPE",
-            uae: "Pour les ÉAU",
+            title: "Pour toucher le tissu en personne, planifiez une visite.",
+            europe: "Pour toucher le tissu en Europe",
+            uae: "Pour toucher le tissu aux ÉAU",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "Envoyer un E-mail"
@@ -700,9 +700,9 @@ export const translations = {
         footer: { desc: "Fabricante premier e exportador global de saris indianos autênticos e têxteis de luxo.", links: "Links Rápidos", collections: "Coleções", contact: "Contatar Sede", legal: { privacy: "Política de Privacidade", terms: "Termos Comerciais", rights: "Todos os direitos reservados." }, items: { silk: "Seda", chiffon: "Chiffon", organza: "Organza", linen: "Linho" } },
         video: { title: "Documentário Kasim Arts" },
         visit: {
-            title: "Explore nossa coleção têxtil pessoalmente — agende uma visita ou entre em contato abaixo.",
-            europe: "Para EUROPA",
-            uae: "Para EAU",
+            title: "Para sentir o tecido pessoalmente, agende uma visita.",
+            europe: "Para sentir o tecido na Europa",
+            uae: "Para sentir o tecido nos Emirados Árabes",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "Enviar E-mail"
@@ -730,9 +730,9 @@ export const translations = {
         footer: { desc: "Führender Hersteller und globaler Exporteur authentischer indischer Saris und Luxustextilien.", links: "Schnelllinks", collections: "Kollektionen", contact: "Hauptsitz kontaktieren", legal: { privacy: "Datenschutzrichtlinie", terms: "Handelsbedingungen", rights: "Alle Rechte vorbehalten." }, items: { silk: "Seide", chiffon: "Chiffon", organza: "Organza", linen: "Leinen" } },
         video: { title: "Kasim Arts Dokumentation" },
         visit: {
-            title: "Erleben Sie unsere Textilkollektion persönlich – vereinbaren Sie einen Besuch oder kontaktieren Sie uns unten.",
-            europe: "Für EUROPA",
-            uae: "Für VAE",
+            title: "Um den Stoff persönlich zu fühlen, vereinbaren Sie einen Besuch.",
+            europe: "Um den Stoff in Europa zu fühlen",
+            uae: "Um den Stoff in den VAE zu fühlen",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "E-Mail senden"
@@ -760,9 +760,9 @@ export const translations = {
         footer: { desc: "本格的なインドサリーと高級テキスタイルの一流メーカーおよびグローバル輸出業者。", links: "クイックリンク", collections: "コレクション", contact: "本社に連絡", legal: { privacy: "プライバシーポリシー", terms: "取引条件", rights: "全著作権所有。" }, items: { silk: "シルク", chiffon: "シフォン", organza: "オーガンザ", linen: "リネン" } },
         video: { title: "Kasim Arts ドキュメンタリー" },
         visit: {
-            title: "私たちのテキスタイルコレクションを直接ご覧ください。訪問の予約やお問い合わせは以下からお願いいたします。",
-            europe: "ヨーロッパ向け",
-            uae: "UAE向け",
+            title: "生地を実際に体験するには、訪問をご予約ください。",
+            europe: "ヨーロッパで生地を体験する",
+            uae: "UAEで生地を体験する",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "メールを送る"
@@ -788,7 +788,17 @@ export const translations = {
         manufacturing: { subtitle: "Инфраструктура", title: "Превосходство Производства", description: "Сочетание традиционного ремесла с современной логистикой для обслуживания мировых брендов.", capabilities: { custom: "Индивидуальное Производство", customDesc: "Дизайн и ткачество сари по вашим макетам.", private: "Частная Марка", privateDesc: "Полные услуги белой маркировки.", quality: "Гарантия Качества", qualityDesc: "3-этапный контроль качества — 100% без дефектов.", logistics: "Глобальная Логистика", logisticsDesc: "Интегрированная сеть доставки по всему миру." }, stats: { legacy: "Лет Наследия", legacyValue: "150+", export: "Стран Экспорта", exportValue: "По Всему Миру", quality: "Качество Ручной Работы", days: "Дней на Сари" }, quote: { text: "\"Душа сари — в чистоте его плетения.\"", cite: "- Философия Kasim Arts" }, journey: { title: "Путь Производства", desc: "Тщательный путь, сочетающий мастерство предков и современные технологии.", labels: { step1Silk: "Обработка Шёлка:", step1Zari: "Мастерство Зари:", step2Graphing: "Цифровая Графика:", step2Jacquard: "Электронные Жаккарды:", step3Time: "Время и Точность:", step3Artistry: "Итеративное Искусство:", step4Handloom: "Целостность Ручного Ткачества:", step4Quality: "Превосходное Качество:", step5Fashion: "Мировая Мода:", step5Partnerships: "Корпоративные Партнёрства:" }, step1: { title: "Подготовка Материалов и Окраска", intro: "Выбор высококачественного сырья.", silk: "Сырой шёлк проходит отбеливание (Kharai) перед окраской.", zari: "Современный зари изготовлен из медной проволоки с серебряным покрытием." }, step2: { title: "Дизайн и Технологии", intro: "Революция традиционного ткачества с помощью ПО.", graphing: "Компьютерная графика позволяет моделировать цветовые гаммы.", jacquard: "Электронные жаккарды обеспечивают гибкость." }, step3: { title: "Процесс Ткачества", intro: "Совместная работа мастеров и дизайнеров.", time: "Индивидуальный дизайн и ткачество сари.", artistry: "Постоянная проверка для доводки результата." }, step4: { title: "Приверженность Чистоте", intro: "Строгие стандарты качества и подлинности.", handloom: "Продукция 'Handloom' или 'Kadwa' — исключительно ручная работа.", quality: "Используется только шёлк высшего качества." }, step5: { title: "Разнообразные Применения", intro: "За пределами сари — для мировой моды.", fashion: "Ручные ткани для курток, брюк и роскошной обивки.", partnerships: "Обслуживание национальных и международных корпоративных брендов." } } },
         contact: { title: "B2B Коммерческий Запрос", desc: "Укажите ваши данные, и наш менеджер по экспорту свяжется с вами в течение 24 часов.", hqTitle: "Штаб-квартира", hqName: "Штаб-квартира Kasim Arts", hqAddress: "A.29/1-A-2, K.P, Pilikothi (Behind Adampupra Police Station) Varanasi-221001", unitLabel: "Производственная Единица:", unitAddress: "Textile Valley, Surat, Gujarat", mapLabel: "Варанаси", globalPresence: "Мировой Экспорт", hqIndia: "Индия (Штаб-квартира)", countries: { uae: "ОАЭ", uk: "Великобритания", usa: "США", singapore: "Сингапур", canada: "Канада", australia: "Австралия" }, internationalEnquiry: "Международный Запрос:", nationalEnquiry: "Национальный Запрос:" },
         footer: { desc: "Ведущий производитель и мировой экспортёр аутентичных индийских сари и роскошного текстиля.", links: "Быстрые Ссылки", collections: "Коллекции", contact: "Связаться со Штаб-квартирой", legal: { privacy: "Политика Конфиденциальности", terms: "Условия Торговли", rights: "Все права защищены." }, items: { silk: "Шёлк", chiffon: "Шифон", organza: "Органза", linen: "Лён" } },
-        video: { title: "Документальный Фильм Kasim Arts" }
+        video: {
+            title: "Документальный Фильм Kasim Arts"
+        },
+        visit: {
+            title: "Чтобы почувствовать ткань вживую, запланируйте визит.",
+            europe: "Почувствовать ткань в Европе",
+            uae: "Почувствовать ткань в ОАЭ",
+            emailEurope: "sunay.eu@kasimarts.com",
+            emailUAE: "weavesnwhispers@kasimarts.com",
+            btnText: "Отправить письмо"
+        }
     },
     tr: {
         nav: { home: "Ana Sayfa", heritage: "Miras", collections: "Koleksiyonlar", manufacturing: "Üretim", contact: "İletişim", b2bInquiry: "B2B Sorgu" },
@@ -812,9 +822,9 @@ export const translations = {
         footer: { desc: "Otantik Hint sarileri ve lüks tekstilin önde gelen üreticisi ve küresel ihracatçısı.", links: "Hızlı Bağlantılar", collections: "Koleksiyonlar", contact: "Merkeze Ulaş", legal: { privacy: "Gizlilik Politikası", terms: "Ticaret Koşulları", rights: "Tüm hakları saklıdır." }, items: { silk: "İpek", chiffon: "Şifon", organza: "Organze", linen: "Keten" } },
         video: { title: "Kasim Arts Belgeseli" },
         visit: {
-            title: "Tekstil koleksiyonumuzu şahsen keşfedin; bir ziyaret planlayın veya aşağıdan iletişime geçin.",
-            europe: "AVRUPA İçin",
-            uae: "BAE İçin",
+            title: "Kumaşı şahsen hissetmek için bir ziyaret planlayın.",
+            europe: "Avrupa'da kumaşı hissetmek için",
+            uae: "BAE'de kumaşı hissetmek için",
             emailEurope: "sunay.eu@kasimarts.com",
             emailUAE: "weavesnwhispers@kasimarts.com",
             btnText: "E-posta Gönder"
