@@ -6,6 +6,7 @@ import About from './pages/About';
 import Collections from './pages/Collections';
 import Manufacturing from './pages/Manufacturing';
 import Contact from './pages/Contact';
+import Connect from './pages/Connect';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
             <Route path="/collections" element={<Collections />} />
             <Route path="/manufacturing" element={<Manufacturing />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/connect" element={<Connect />} />
+            <Route path="/card" element={<Connect />} />
           </Routes>
         </Layout>
       </Router>
