@@ -9,7 +9,6 @@ import {
     FaWhatsapp, 
     FaPhone, 
     FaEnvelope, 
-    FaGlobe, 
     FaDownload, 
     FaShareNodes, 
     FaCopy, 
@@ -84,6 +83,7 @@ const Connect = () => {
 
     // Generate QR codes for all platforms
     useEffect(() => {
+        let isMounted = true;
         const generateAllQRs = async () => {
             const qrMap = {};
             for (const item of PLATFORMS) {
@@ -102,10 +102,11 @@ const Connect = () => {
                     console.error('Failed to generate QR for', item.id, err);
                 }
             }
-            setQrCodes(qrMap);
+            if (isMounted) setQrCodes(qrMap);
         };
 
         generateAllQRs();
+        return () => { isMounted = false; };
     }, []);
 
     // Copy URL to clipboard
@@ -159,7 +160,7 @@ ORG:Kasim Arts Varanasi
 TITLE:Banarasi Silk & Heritage Textile Manufacturers
 TEL;TYPE=WORK,VOICE:+919278181550
 EMAIL;TYPE=PREF,INTERNET:info@kasimarts.com
-URL:https://kasimarts.com
+URL:https://kasimarts.com/card
 ADR;TYPE=WORK:;;A.29/1-A-2, K.P. Bahadur Shaheed, Behind Bank of Baroda, Near Adampura Police Station, Pilikothi;Varanasi;Uttar Pradesh;221001;India
 NOTE:Master artisans of pure Banarasi silk, sarees, brocades & fabrics since 1885.
 END:VCARD`;
@@ -200,7 +201,7 @@ END:VCARD`;
                     </div>
                 </header>
 
-                {/* Platforms Grid */}
+                {/* Platforms Grid (Instagram, Facebook, YouTube, Google Review) */}
                 <div className="connect-grid">
                     {PLATFORMS.map((item) => {
                         const Icon = item.icon;

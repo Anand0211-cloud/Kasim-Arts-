@@ -1,0 +1,546 @@
+/* ==========================================================
+   Kasim Arts - Main Business Card QR Dedicated Page
+   Single Purpose • Zero Clutter • Print Ready
+   ========================================================== */
+
+.main-qr-page {
+    position: relative;
+    min-height: calc(100vh - var(--header-height, 65px));
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 3rem 1rem 5rem;
+    overflow-x: hidden;
+}
+
+/* Subtle luxury gold aura in background */
+.main-qr-aura {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0) 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.main-qr-container {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* ==========================================================
+   Header Section (Exact Header Brand Lockup)
+   ========================================================== */
+.main-qr-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-qr-brand-lockup {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.main-qr-exact-logo {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+    background: transparent;
+    transition: transform 0.3s ease;
+}
+
+.main-qr-brand-lockup:hover .main-qr-exact-logo {
+    transform: scale(1.05);
+}
+
+.main-qr-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.15;
+}
+
+.main-qr-brand-name {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-qr-brand-since {
+    font-size: 0.85rem;
+    font-family: var(--font-sans);
+    color: var(--color-gold-primary);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.main-qr-crest {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--color-gold-primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.main-qr-title {
+    font-family: var(--font-serif);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--color-gold-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-qr-tagline {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 540px;
+    line-height: 1.5;
+}
+
+/* ==========================================================
+   The Main QR Card
+   ========================================================== */
+.main-qr-card {
+    position: relative;
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.05) 0%, var(--bg-secondary) 100%);
+    border: 1.5px solid var(--color-gold-primary);
+    border-radius: 22px;
+    padding: 3rem 2.25rem 2.5rem;
+    box-shadow: 0 16px 48px rgba(212, 175, 55, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-qr-badge {
+    position: absolute;
+    top: -14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-dark));
+    color: #FFFFFF;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.4rem 1.1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.4);
+}
+
+.badge-sparkle {
+    font-size: 0.85rem;
+}
+
+/* QR Centerpiece */
+.main-qr-centerpiece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.main-qr-frame {
+    width: 260px;
+    height: 260px;
+    background: #FFFFFF;
+    padding: 14px;
+    border: 2px solid var(--color-gold-primary);
+    border-radius: 20px;
+    box-shadow: 0 10px 32px rgba(212, 175, 55, 0.3);
+    margin-bottom: 1.1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.main-qr-frame:hover {
+    transform: scale(1.02);
+    box-shadow: 0 14px 40px rgba(212, 175, 55, 0.4);
+}
+
+.main-qr-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.main-qr-loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.qr-spin {
+    font-size: 2.2rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.main-qr-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.main-qr-status strong {
+    color: var(--color-gold-primary);
+}
+
+.pulse-dot {
+    width: 9px;
+    height: 9px;
+    background-color: var(--color-gold-primary);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 rgba(212, 175, 55, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 9px rgba(212, 175, 55, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+/* ==========================================================
+   Target URL Controls
+   ========================================================== */
+.main-qr-controls {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.025);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+[data-theme='dark'] .main-qr-controls {
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.url-preview-pill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.url-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.url-address-bar {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-primary);
+    border: 1.5px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.45rem 0.9rem;
+    font-family: 'SF Mono', Consolas, Monaco, monospace;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.url-protocol {
+    color: var(--text-muted);
+}
+
+.url-domain {
+    color: var(--color-gold-primary);
+    font-weight: 700;
+}
+
+.url-slash {
+    color: var(--text-muted);
+    margin: 0 2px;
+}
+
+.slug-selector {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    cursor: pointer;
+    outline: none;
+    padding: 2px 4px;
+}
+
+.slug-selector option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.analytics-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.analytics-checkbox input {
+    accent-color: var(--color-gold-primary);
+    cursor: pointer;
+}
+
+.analytics-checkbox code {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 1px 4px;
+    border-radius: 4px;
+    color: var(--color-gold-dark);
+}
+
+/* ==========================================================
+   Action Buttons
+   ========================================================== */
+.main-qr-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.btn-main-download-png {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-dark));
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-main-download-png:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.btn-main-download-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1.5px solid var(--border-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-main-download-svg:hover {
+    border-color: var(--color-gold-primary);
+    color: var(--color-gold-primary);
+    transform: translateY(-2px);
+}
+
+.btn-main-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    border: 1.5px solid var(--border-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-main-copy:hover {
+    border-color: var(--color-gold-primary);
+    color: var(--text-primary);
+}
+
+.btn-main-copy.copied {
+    border-color: #2E7D32;
+    color: #2E7D32;
+    background: rgba(46, 125, 50, 0.08);
+}
+
+.btn-main-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    background: rgba(212, 175, 55, 0.08);
+    color: var(--color-gold-primary);
+    border: 1.5px solid rgba(212, 175, 55, 0.4);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-main-preview:hover {
+    background: var(--color-gold-primary);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.text-success {
+    color: #2E7D32;
+}
+
+/* ==========================================================
+   Info Note
+   ========================================================== */
+.main-qr-info-note {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1.1rem 1.25rem;
+    background: rgba(212, 175, 55, 0.07);
+    border-left: 3.5px solid var(--color-gold-primary);
+    border-radius: 10px;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+.main-qr-info-note .note-icon {
+    color: var(--color-gold-primary);
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.main-qr-info-note strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.main-qr-info-note code {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 1px 4px;
+    border-radius: 4px;
+    color: var(--color-gold-dark);
+}
+
+/* ==========================================================
+   Mobile Optimization (@media max-width: 600px)
+   ========================================================== */
+@media (max-width: 600px) {
+    .main-qr-page {
+        padding: 2rem 0.75rem 4rem;
+    }
+
+    .main-qr-brand-lockup {
+        gap: 0.75rem;
+    }
+
+    .main-qr-exact-logo {
+        height: 52px;
+    }
+
+    .main-qr-brand-name {
+        font-size: 1.65rem;
+        letter-spacing: 1.5px;
+    }
+
+    .main-qr-brand-since {
+        font-size: 0.78rem;
+        letter-spacing: 2px;
+    }
+
+    .main-qr-title {
+        font-size: 1.85rem;
+    }
+
+    .main-qr-card {
+        padding: 2.5rem 1.25rem 1.75rem;
+    }
+
+    .main-qr-frame {
+        width: 210px;
+        height: 210px;
+        padding: 10px;
+    }
+
+    .main-qr-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .url-preview-pill {
+        flex-direction: column;
+    }
+}

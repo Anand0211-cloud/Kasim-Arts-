@@ -7,6 +7,7 @@ import Collections from './pages/Collections';
 import Manufacturing from './pages/Manufacturing';
 import Contact from './pages/Contact';
 import Connect from './pages/Connect';
+import MainQR from './pages/MainQR';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/connect" element={<Connect />} />
             <Route path="/card" element={<Connect />} />
+            <Route path="/qr" element={<MainQR />} />
+            <Route path="/main-qr" element={<MainQR />} />
+            <Route path="/card-qr" element={<MainQR />} />
           </Routes>
         </Layout>
       </Router>
