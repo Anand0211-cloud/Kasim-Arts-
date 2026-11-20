@@ -33,7 +33,6 @@ const PLATFORMS = [
         actionLabel: 'Write a Review on Google',
         icon: FaGoogle,
         accentColor: '#EA4335',
-        badge: 'Recommended',
         featured: true,
         isReview: true
     },
@@ -46,7 +45,6 @@ const PLATFORMS = [
         actionLabel: 'Follow on Instagram',
         icon: FaInstagram,
         accentColor: '#E1306C',
-        badge: 'Latest Designs',
         featured: false
     },
     {
@@ -58,7 +56,6 @@ const PLATFORMS = [
         actionLabel: 'Connect on Facebook',
         icon: FaFacebookF,
         accentColor: '#1877F2',
-        badge: 'Community',
         featured: false
     },
     {
@@ -70,7 +67,6 @@ const PLATFORMS = [
         actionLabel: 'Subscribe on YouTube',
         icon: FaYoutube,
         accentColor: '#FF0000',
-        badge: 'Artisan Films',
         featured: false
     }
 ];
